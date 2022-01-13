@@ -103,12 +103,22 @@ ul {
   background-color: #333333;
   color: white;
   overflow: hidden;
+  text-align: center;
 }
 
-.section-about .about-pattern {
-  height: 25em;
-  margin-left: 9em;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+.section-about h3 {
+  margin-bottom: 3em;
+}
+
+.section-about .about-pattern-right {
+  width: 20em;
+  margin: 3em 0px;
+  margin-left: -5em;
+}
+
+.section-about .about-pattern-left {
+  width: 20em;
+  margin: 3em 0px;
+  margin-left: 5em;
 }
 /*# sourceMappingURL=style.css.map */
