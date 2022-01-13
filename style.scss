@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
 
 *, *::before, *::after {
     margin: 0px;
@@ -12,6 +13,18 @@ body {
     overflow-x: hidden;
 }
 
+section {
+    padding: 2em 3em;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
 .navbar {
     background-color: #333333;
     padding: 1em;
@@ -20,36 +33,24 @@ body {
         justify-content: space-between;
     }
     .navbar-logo, .navbar-menu {
-        width: 40px;
-        height: 40px;
+        width: 2em;
+        height: 2em;
     }
     nav{
         display: none;
     }
 }
 
-section {
-    padding: 2em 3em;
-}
-
 .section-hero {
     .col-left {
         position: relative;
-        text-align: center;
         height: 100%;
         .hero-pattern {
-            width: 20em;
-            height: 20em;
-            position: absolute;
-            left: -12em;
+            display: none;
         }
-        hr {
-            border-top: 1px solid black;
-            width: 100px;
-            margin: 3em auto;
-        }
-        h3 {
-            font-weight: 300;
+        h1 {
+            font-size: 2.5em;
+            padding: 2em 0;
         }
         .btn-cta {
             display: inline-block;
@@ -66,19 +67,30 @@ section {
             }
         }
     }
-    .col-right img {
-        display: none;
+    .col-right 
+    {
+        font-family: 'Cinzel', serif;
+        text-align: right;
+        display: flex;
+        justify-content: space-between;
+        img {
+            display: none;
+        }
+        svg {
+            width: 1.5em;
+            height: 1.5em;
+        }
     }    
 }
 
 .section-about {
     background-color: #333333;
     color: white;
-    .col {
-        .about-pattern {
-            position: absolute;
-            top: 0;
-            right: -100px;
-        }
+    overflow: hidden;
+    .about-pattern {
+        height: 25em;
+        margin-left: 9em;
+        transform: rotate(90deg);
     }
 }
+

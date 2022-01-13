@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap");
 *, *::before, *::after {
   margin: 0px;
   padding: 0px;
@@ -8,6 +9,18 @@
 body {
   background-color: #e9e9e9;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 2em 3em;
+}
+
+ul {
+  list-style: none;
+}
+
+.wrapper {
   overflow-x: hidden;
 }
 
@@ -26,39 +39,26 @@ body {
 }
 
 .navbar .navbar-logo, .navbar .navbar-menu {
-  width: 40px;
-  height: 40px;
+  width: 2em;
+  height: 2em;
 }
 
 .navbar nav {
   display: none;
 }
 
-section {
-  padding: 2em 3em;
-}
-
 .section-hero .col-left {
   position: relative;
-  text-align: center;
   height: 100%;
 }
 
 .section-hero .col-left .hero-pattern {
-  width: 20em;
-  height: 20em;
-  position: absolute;
-  left: -12em;
+  display: none;
 }
 
-.section-hero .col-left hr {
-  border-top: 1px solid black;
-  width: 100px;
-  margin: 3em auto;
-}
-
-.section-hero .col-left h3 {
-  font-weight: 300;
+.section-hero .col-left h1 {
+  font-size: 2.5em;
+  padding: 2em 0;
 }
 
 .section-hero .col-left .btn-cta {
@@ -79,18 +79,36 @@ section {
           box-shadow: 2px 2px 8px #818181;
 }
 
+.section-hero .col-right {
+  font-family: 'Cinzel', serif;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .section-hero .col-right img {
   display: none;
+}
+
+.section-hero .col-right svg {
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .section-about {
   background-color: #333333;
   color: white;
+  overflow: hidden;
 }
 
-.section-about .col .about-pattern {
-  position: absolute;
-  top: 0;
-  right: -100px;
+.section-about .about-pattern {
+  height: 25em;
+  margin-left: 9em;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */
