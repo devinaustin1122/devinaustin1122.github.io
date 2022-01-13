@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #d4d4d4;
+  background-color: #e9e9e9;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -25,6 +25,8 @@ ul {
 }
 
 .navbar {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #333333;
   padding: 1em;
 }
@@ -51,14 +53,20 @@ ul {
   position: relative;
 }
 
-.section-hero .container .hero-lines {
+.section-hero .container .hero-zag {
   position: absolute;
   right: -4em;
 }
 
-.section-hero .container .hero-zag {
+.section-hero .container .hero-hand {
+  height: 5em;
   position: absolute;
-  right: -4em;
+  bottom: -5em;
+  z-index: -1;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  -webkit-animation: wave 1.5s infinite;
+          animation: wave 1.5s infinite;
 }
 
 .section-hero .container .col-left {
@@ -115,6 +123,44 @@ ul {
           animation: bounce 1.5s infinite;
 }
 
+@-webkit-keyframes wave {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes wave {
+  25% {
+    -webkit-transform: rotate(10deg);
+            transform: rotate(10deg);
+  }
+  50% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
 @-webkit-keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     -webkit-transform: translateY(0);
@@ -154,6 +200,8 @@ ul {
 
 .section-about .about-star {
   margin: 2em 0;
+  -webkit-animation: spin 5s infinite;
+          animation: spin 5s infinite;
 }
 
 .section-about p {
