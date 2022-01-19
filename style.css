@@ -8,8 +8,8 @@ body {
   background-color: #272727;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10vh 90vh 100vh 100vh;
-      grid-template-rows: 10vh 90vh 100vh 100vh;
+  -ms-grid-rows: 10vh 90vh;
+      grid-template-rows: 10vh 90vh;
   color: white;
   font-family: 'Poppins', sans-serif;
 }
@@ -53,7 +53,7 @@ ul {
   font-weight: 200;
   padding: .8em 0;
   font-family: 'Nothing You Could Do', cursive;
-  color: #6d6cb8;
+  color: #2bffd1;
 }
 
 .hero p {
@@ -63,9 +63,38 @@ ul {
   color: silver;
 }
 
-.hero svg {
+.hero .col-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .col-right svg {
   height: 10em;
   width: 10em;
   padding-top: 2em;
+}
+
+.hero .col-right #down {
+  width: 2em;
+  height: 2em;
+  margin-top: auto;
+  color: #2bffd1;
+}
+
+.about h4 {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.about p {
+  font-size: .8em;
+  font-weight: 300;
+  line-height: 2em;
+  color: #c0c0c0;
+  padding-top: 1em;
 }
 /*# sourceMappingURL=style.css.map */
