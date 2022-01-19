@@ -1,0 +1,33 @@
+<svg width="184" height="371" viewBox="0 0 184 371" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="63" y="131" width="121" height="186" fill="url(#paint0_linear_28_5)"/>
+<mask id="mask0_28_5" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="173" height="373">
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 244.615)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 231.026)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 217.436)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 203.846)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 190.256)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 176.667)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 163.077)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 149.487)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 135.897)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 122.308)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 108.718)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 95.1282)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 81.5385)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 67.9487)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 54.359)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 40.7692)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 27.1795)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 13.5897)" stroke="black" stroke-width="3"/>
+<line y1="-1.5" x2="211.833" y2="-1.5" transform="matrix(-0.80252 0.596625 -0.80252 -0.596625 170 0)" stroke="black" stroke-width="3"/>
+</mask>
+<g mask="url(#mask0_28_5)">
+<rect x="28" y="100" width="114.247" height="181.091" fill="white"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_28_5" x1="123.5" y1="131" x2="123.5" y2="317" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6100FF"/>
+<stop offset="1" stop-color="#00B2FF" stop-opacity="0"/>
+</linearGradient>
+</defs>
+</svg>
