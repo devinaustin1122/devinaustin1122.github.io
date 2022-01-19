@@ -8,7 +8,7 @@
 body {
     background-color: #272727;
     display: grid;
-    grid-template-rows: 10vh 90vh;
+    grid-template-rows: 10vh 90vh 100vh 100vh;
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -35,6 +35,11 @@ section {
 
 ul {
     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .hero {
@@ -67,6 +72,7 @@ ul {
             width: 2em;
             height: 2em;
             margin-top: auto;
+            margin-bottom: 2em;
             color: #FFDD2B;
         }
     }
@@ -84,5 +90,24 @@ ul {
         color: #c0c0c0;
         padding-top: 1em;
     }
+    img {
+        display: none;
+    }
 }
 
+.technical {
+    a {
+        font-family: 'Nothing You Could Do', cursive;
+    }
+    a:focus {
+        text-decoration: underline;
+        color: #FFDD2B;
+    }
+    p {
+        font-size: .8em;
+        font-weight: 300;
+        line-height: 2em;
+        color: #c0c0c0;
+        padding-top: 1em;
+    }
+}
