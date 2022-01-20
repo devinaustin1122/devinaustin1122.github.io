@@ -1,27 +1,76 @@
-@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&family=Noto+Serif&family=Playfair+Display+SC&display=swap");
 *, *::before, *::after {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
-  background-color: #272727;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 10vh 90vh 100vh 100vh;
-      grid-template-rows: 10vh 90vh 100vh 100vh;
-  color: white;
-  font-family: 'Poppins', sans-serif;
+  -ms-grid-rows: 100vh;
+      grid-template-rows: 100vh;
+  font-family: 'Newsreader', serif;
 }
 
-section, .navbar {
+.navbar {
+  position: absolute;
+  width: 100vw;
   padding: 2em 2em;
-}
-
-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #4C5035;
+  color: white;
+  font-family: 'Playfair Display SC', serif;
+}
+
+.navbar nav {
+  display: none;
+}
+
+.navbar img {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.navbar .nav-brand {
+  font-size: 1.4em;
+  color: #EADFB9;
+}
+
+.scroll-prompt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  position: absolute;
+  bottom: 9em;
+  left: -6em;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  font-family: 'Playfair Display SC', serif;
+  font-size: .9em;
+}
+
+.scroll-prompt img {
+  width: 16em;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -29,99 +78,28 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #4C5035), color-stop(50%, #fff));
+  background-image: linear-gradient(#4C5035 50%, #fff 50%);
+  width: 100vw;
 }
 
-.navbar ul {
+.hero .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero .container img {
   display: none;
 }
 
-.navbar a {
-  float: right;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
+.hero .container .col-left {
+  font-size: 3.7em;
   color: white;
 }
 
-.hero h1 {
-  font-size: 2em;
-  line-height: 1.1em;
-}
-
-.hero h3 {
-  font-size: 1.5em;
-  font-weight: 200;
-  padding: .8em 0;
-  font-family: 'Nothing You Could Do', cursive;
-  color: #FFDD2B;
-}
-
-.hero p {
-  font-size: .8em;
-  font-weight: 300;
-  line-height: 2em;
-  color: silver;
-}
-
-.hero .col-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.hero .col-right svg {
-  height: 10em;
-  width: 10em;
-  padding-top: 2em;
-}
-
-.hero .col-right #down {
-  width: 2em;
-  height: 2em;
-  margin-top: auto;
-  margin-bottom: 2em;
-  color: #FFDD2B;
-}
-
-.about h4 {
-  font-size: 1em;
-  font-weight: 300;
-}
-
-.about p {
-  font-size: .8em;
-  font-weight: 300;
-  line-height: 2em;
-  color: #c0c0c0;
-  padding-top: 1em;
-}
-
-.about img {
-  display: none;
-}
-
-.technical a {
-  font-family: 'Nothing You Could Do', cursive;
-}
-
-.technical a:focus {
-  text-decoration: underline;
-  color: #FFDD2B;
-}
-
-.technical p {
-  font-size: .8em;
-  font-weight: 300;
-  line-height: 2em;
-  color: #c0c0c0;
-  padding-top: 1em;
+.hero .container .col-right {
+  font-size: 3.7em;
+  color: #4C5035;
 }
 /*# sourceMappingURL=style.css.map */
