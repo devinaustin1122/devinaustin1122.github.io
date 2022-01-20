@@ -62,6 +62,7 @@ body {
           transform: rotate(-90deg);
   font-family: 'Playfair Display SC', serif;
   font-size: .7em;
+  color: #4C5035;
 }
 
 .scroll-prompt img {
