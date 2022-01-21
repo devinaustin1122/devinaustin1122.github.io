@@ -47,22 +47,24 @@ body {
 }
 
 .left {
-  padding: 1em 1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   position: fixed;
-  left: 0;
-  bottom: 0;
+  top: 0px;
+  left: 0px;
   height: 100vh;
-  color: black;
-  font-family: 'Playfair Display SC', serif;
 }
 
-.scroll-prompt {
+.left .container {
+  position: relative;
+  height: 100%;
+}
+
+.left .container .scroll {
+  position: absolute;
+  bottom: 0;
+  padding: 4em 1em;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -70,19 +72,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
 }
 
-.scroll-prompt img {
-  height: 17em;
+.left .container .scroll img {
+  height: 15em;
 }
 
 .hero {

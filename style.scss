@@ -39,27 +39,27 @@ body {
     }
 }
 
-.left
-{
-    padding: 1em 1em;
-    display: flex;
-    align-items: end;
+.left {
     position: fixed;
-    left: 0;
-    bottom: 0;
+    top: 0px;
+    left: 0px;
     height: 100vh;
-    color: black;
-    font-family: 'Playfair Display SC', serif;
-}
-
-.scroll-prompt {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    writing-mode: vertical-rl;
-    img {
-        height: 17em;
+    .container {
+        position: relative;
+        height: 100%;
+        .scroll{
+            position: absolute;
+            bottom: 0;
+            padding: 4em 1em;
+            writing-mode: vertical-rl;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: 'Playfair Display SC', serif;
+            img {
+                height: 15em;
+            }
+        }
     }
 }
 
