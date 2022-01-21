@@ -43,9 +43,11 @@ body {
     top: 0px;
     left: 0px;
     height: 100vh;
+    width: 10vw;
     .container {
         position: relative;
         height: 100%;
+        width: 10vw;
         .scroll{
             position: absolute;
             bottom: 0;
