@@ -72,10 +72,19 @@ body {
 }
 
 .about {
+    text-align: right;
+    position: relative;
+    h5 {
+        font-family: 'Playfair Display SC', serif;
+        color: #4C5035;
+        padding: 1em;
+        font-size: 1.2em;
+    }
     img {
         display: none;
     }
     .container {
+        text-align: left;
         margin-left: 3em;
         padding: 3em 3em;
         line-height: 2em;
@@ -83,6 +92,15 @@ body {
         font-family: 'Noto Serif', serif; 
         color: white;
         background-color: #923030;
+    }
+    .links {
+        color: black;
+        img {
+            display: inline-block;
+            width: 5em;
+            height: 5em;
+            padding: 1em;
+        }
     }
 }
 
