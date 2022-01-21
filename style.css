@@ -49,11 +49,12 @@ body {
 .scroll {
   position: fixed;
   bottom: 0;
-  width: 85px;
+  left: 0;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   text-orientation: mixed;
+  font-size: .8em;
   font-family: 'Playfair Display SC', serif;
   color: #4C5035;
   padding: 2em 2em;
