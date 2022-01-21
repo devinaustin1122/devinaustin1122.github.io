@@ -42,12 +42,11 @@ body {
 .scroll {
     position: fixed;
     bottom: 0;
-    left: 0;
+    left: 30px;
     writing-mode: vertical-rl;
     font-size: .8em;
     font-family: 'Playfair Display SC', serif;
     color: #4C5035;
-    padding: 2em 2em;
 }
 
 .hero {
