@@ -43,15 +43,14 @@ body {
     top: 0px;
     left: 0px;
     height: 100vh;
-    width: 10vw;
     .container {
         position: relative;
         height: 100%;
-        width: 20vw;
         .scroll{
             display: block;
             position: absolute;
             bottom: 0;
+            width: 85px;
             writing-mode: vertical-rl;
             text-orientation: mixed;
             font-family: 'Playfair Display SC', serif;
