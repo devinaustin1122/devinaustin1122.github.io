@@ -65,6 +65,7 @@ body {
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
+  text-orientation: mixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
