@@ -49,7 +49,7 @@ body {
 .scroll {
   position: fixed;
   bottom: 0;
-  left: 100px;
+  left: 20px;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
@@ -86,10 +86,6 @@ body {
 }
 
 .hero .container .col-left {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-  text-orientation: mixed;
   font-size: 3.7em;
   color: white;
 }

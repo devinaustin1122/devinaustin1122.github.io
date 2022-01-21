@@ -41,7 +41,7 @@ body {
 .scroll {
     position: fixed;
     bottom: 0;
-    left: 100px;
+    left: 20px;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     font-size: .8em;
@@ -62,8 +62,6 @@ body {
             display: none;
         }
         .col-left {
-                        writing-mode: vertical-rl;
-            text-orientation: mixed;
             font-size: 3.7em;
             color: white;
         }
