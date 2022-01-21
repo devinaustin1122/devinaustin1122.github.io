@@ -50,17 +50,6 @@ body {
         .scroll{
             position: absolute;
             bottom: 0;
-            padding: 4em 1em;
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            font-family: 'Playfair Display SC', serif;
-            background-color: black;
-            img {
-                height: 15em;
-            }
         }
     }
 }
