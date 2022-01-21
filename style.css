@@ -93,4 +93,18 @@ body {
   font-size: 3.5em;
   color: #4C5035;
 }
+
+.about img {
+  display: none;
+}
+
+.about .container {
+  margin-left: 3em;
+  padding: 3em 3em;
+  line-height: 2em;
+  font-size: 16px;
+  font-family: 'Noto Serif', serif;
+  color: white;
+  background-color: #923030;
+}
 /*# sourceMappingURL=style.css.map */
