@@ -58,14 +58,12 @@ body {
   position: relative;
   height: 100%;
   width: 10vw;
+  background-color: black;
 }
 
 .left .container .scroll {
   position: absolute;
   bottom: 0;
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
   text-orientation: mixed;
   font-family: 'Playfair Display SC', serif;
   color: #4C5035;

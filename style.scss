@@ -48,10 +48,10 @@ body {
         position: relative;
         height: 100%;
         width: 10vw;
+        background-color: black;
         .scroll{
             position: absolute;
             bottom: 0;
-            writing-mode: vertical-rl;
             text-orientation: mixed;
             font-family: 'Playfair Display SC', serif;
             color: #4C5035;
