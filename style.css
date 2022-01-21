@@ -61,6 +61,10 @@ body {
 .left .container .scroll {
   position: absolute;
   bottom: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
   font-family: 'Playfair Display SC', serif;
   color: #4C5035;
   padding: 1em 1em;
@@ -92,6 +96,10 @@ body {
 }
 
 .hero .container .col-left {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
   font-size: 3.7em;
   color: white;
 }

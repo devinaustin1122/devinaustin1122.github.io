@@ -50,8 +50,8 @@ body {
         .scroll{
             position: absolute;
             bottom: 0;
-            // writing-mode: vertical-rl;
-            // text-orientation: mixed;
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
             font-family: 'Playfair Display SC', serif;
             color: #4C5035;
             padding: 1em 1em;
@@ -71,6 +71,8 @@ body {
             display: none;
         }
         .col-left {
+                        writing-mode: vertical-rl;
+            text-orientation: mixed;
             font-size: 3.7em;
             color: white;
         }
