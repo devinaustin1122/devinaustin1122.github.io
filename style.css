@@ -46,6 +46,22 @@ body {
   color: #EADFB9;
 }
 
+.left {
+  padding: 1em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  color: black;
+  font-family: 'Playfair Display SC', serif;
+}
+
 .scroll-prompt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,19 +70,19 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
-  position: fixed;
-  bottom: 9.5em;
-  left: -6em;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  font-family: 'Playfair Display SC', serif;
-  font-size: .7em;
-  color: #4C5035;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
 }
 
 .scroll-prompt img {
-  width: 18em;
+  height: 17em;
 }
 
 .hero {
