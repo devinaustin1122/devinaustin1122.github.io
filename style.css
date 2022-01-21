@@ -50,7 +50,7 @@ body {
 .scroll {
   position: fixed;
   bottom: 0;
-  left: 30px;
+  left: 2em;
   -webkit-writing-mode: vertical-rl;
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
