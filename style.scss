@@ -38,26 +38,15 @@ body {
     }
 }
 
-.left {
+.scroll {
     position: fixed;
-    top: 0px;
-    left: 0px;
-    height: 100vh;
-    .container {
-        position: relative;
-        height: 100%;
-        .scroll{
-            display: block;
-            position: absolute;
-            bottom: 0;
-            width: 85px;
-            writing-mode: vertical-rl;
-            text-orientation: mixed;
-            font-family: 'Playfair Display SC', serif;
-            color: #4C5035;
-            padding: 2em 2em;
-        }
-    }
+    bottom: 0;
+    width: 85px;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: 'Playfair Display SC', serif;
+    color: #4C5035;
+    padding: 2em 2em;
 }
 
 .hero {

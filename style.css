@@ -46,21 +46,8 @@ body {
   color: #EADFB9;
 }
 
-.left {
+.scroll {
   position: fixed;
-  top: 0px;
-  left: 0px;
-  height: 100vh;
-}
-
-.left .container {
-  position: relative;
-  height: 100%;
-}
-
-.left .container .scroll {
-  display: block;
-  position: absolute;
   bottom: 0;
   width: 85px;
   -webkit-writing-mode: vertical-rl;
