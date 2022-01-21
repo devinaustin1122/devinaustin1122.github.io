@@ -58,10 +58,10 @@ body {
   position: relative;
   height: 100%;
   width: 20vw;
-  background-color: black;
 }
 
 .left .container .scroll {
+  display: block;
   position: absolute;
   bottom: 0;
   -webkit-writing-mode: vertical-rl;

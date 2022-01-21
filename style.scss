@@ -48,8 +48,8 @@ body {
         position: relative;
         height: 100%;
         width: 20vw;
-        background-color: black;
         .scroll{
+            display: block;
             position: absolute;
             bottom: 0;
             writing-mode: vertical-rl;
