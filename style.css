@@ -61,6 +61,10 @@ body {
 .left .container .scroll {
   position: absolute;
   bottom: 0;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
 }
 
 .hero {
