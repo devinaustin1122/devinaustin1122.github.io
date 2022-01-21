@@ -57,6 +57,7 @@ body {
   font-size: .8em;
   font-family: 'Playfair Display SC', serif;
   color: #4C5035;
+  z-index: 100;
 }
 
 .hero {
@@ -106,7 +107,7 @@ body {
   font-size: 1.2em;
 }
 
-.about img {
+.about .profile {
   display: none;
 }
 
