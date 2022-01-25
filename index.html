@@ -6,44 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Devin Dyer</title>
 </head>
 
 <body>
     <div class="navbar">
-        <a class="nav-brand">Devin Dyer</a>
-        <img src="assets/menu.svg">
-        <nav>
-            <ul>
-                <li>
-                    projects
-                </li>
-                <li>
-                    contact
-                </li>
-                <li>
-                    resume
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-    <div class="scroll-prompt">
-        Scroll down to learn more
-        <img src="assets/arrow.svg">
+        <div class="container">
+            <img src="assets/menu-toggle.svg">
+            <nav>
+                <ul class="nav-primary">
+                    <li>
+                        about
+                    </li>
+                    <li>
+                        projects
+                    </li>
+                    <li>
+                        contact
+                    </li>
+                </ul>
+                <ul class="nav-secondary">
+                    <li>
+                        resume
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </div>
 
     <section class="hero">
         <div class="container">
             <div class="col-left">
-                Designer
+                <h5>hi, my name is</h5>
+                <h1>Devin Dyer.</h1>
+                <h3>i use simple designs to power unique ideas.</h3>
+                <div class="cta">
+                    <a href="#">reach out</a>
+                </div>
+                <svg width="29" height="31" viewBox="0 0 29 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 29.8333V1.16666" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1.95831 17.2917L14.5 29.8333L27.0416 17.2917" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
             </div>
-            <img src="assets/cursor.svg">
-            <div class="col-right">
-                Developer
-            </div>
+            <img src="assets/circle-shadow.svg">
         </div>
     </section>
+
+    <section class="about">
+        <img class="img-left" src="assets/circles-left.svg">
+        <img class="img-right" src="assets/circles-right.svg">
+        <div class="container">
+            <h2>about me.</h2>
+            <img src="assets/b&w.jpg">
+            <p>
+                my name is devin and i strive to achieve the most, using the least. this doesn’t mean i’m not hip to new technologies or complex
+                algorithms, i just believe these should be saved for when they are completely necessary. i believe complexity should be saved for
+                last.
+            </p>
+        </div>
+    </section>
+
+    <script src="intersection-observer.js"></script>
 </body>
 
 </html>
