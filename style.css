@@ -4,7 +4,6 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  z-index: 1;
 }
 
 body {
@@ -13,6 +12,7 @@ body {
 
 section {
   padding: 2em 2em;
+  position: relative;
 }
 
 h1 {
@@ -29,8 +29,8 @@ h2 {
 }
 
 h3 {
-  font-size: 2em;
-  font-weight: 400;
+  font-size: 1.3em;
+  font-weight: 700;
   color: white;
 }
 
@@ -75,7 +75,6 @@ ul {
 }
 
 .hero {
-  position: relative;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -117,7 +116,6 @@ ul {
 
 .about {
   min-height: 100vh;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,24 +170,32 @@ ul {
 
 .projects {
   min-height: 100vh;
+  padding-top: 4em;
 }
 
 .projects .project-card {
   background-color: #ff7809;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
-  height: 11em;
-  position: relative;
-}
-
-.projects img {
-  opacity: .3;
-  width: 200%;
+  padding: 1em;
+  margin-top: 2em;
+  -webkit-box-shadow: 0px 5px 5px #cccccc;
+          box-shadow: 0px 5px 5px #cccccc;
 }
 
 .projects h3 {
-  position: absolute;
-  top: 0;
-  left: 1em;
+  color: white;
+}
+
+.projects p {
+  color: white;
+  padding-top: 2em;
+}
+
+.projects img {
+  width: 2em;
+  height: 2em;
+  margin-top: 2em;
+  float: right;
 }
 /*# sourceMappingURL=style.css.map */
