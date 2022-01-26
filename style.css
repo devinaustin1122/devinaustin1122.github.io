@@ -60,7 +60,7 @@ ul {
   width: 100vw;
   position: fixed;
   padding: 2em;
-  background-color: white;
+  z-index: 1;
 }
 
 .navbar nav {
@@ -70,8 +70,7 @@ ul {
 .navbar img {
   height: 2em;
   width: 2em;
-  position: fixed;
-  right: 2em;
+  float: right;
 }
 
 .hero {
