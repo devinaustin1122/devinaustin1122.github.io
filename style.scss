@@ -12,7 +12,7 @@ body {
 }
 
 section{
-    padding: 3em 3em;
+    padding: 2em 2em;
 }
 
 h1 {
@@ -29,9 +29,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1em;
+    font-size: 2em;
     font-weight: 400;
-    color: #ff7809;
+    color: white;
 }
 
 h4 {
@@ -41,6 +41,7 @@ h4 {
 }
 
 h5 {
+    color: white;
     font-size: 1em;
     font-weight: 400;
 }
@@ -103,6 +104,7 @@ ul {
 }
 
 .about {
+    min-height: 100vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -130,6 +132,7 @@ ul {
 }
 
 .experience {
+    min-height: 100vh;
     padding-top: 4em;
     p {
         padding-top: 2em;
@@ -139,5 +142,25 @@ ul {
         color: #ff7809;
         text-align: left;
         padding: 1em 2em;
+    }
+}
+
+.projects {
+    min-height: 100vh;
+    .project-card {
+        background-color: #ff7809;
+        border-radius: 10px;
+        overflow: hidden;
+        height: 11em;
+        position: relative;
+    }
+    img {
+        opacity: .3;
+        width: 200%
+    }
+    h3 {
+        position: absolute;
+        top: 0;
+        left: 1em;
     }
 }
