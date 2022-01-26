@@ -12,7 +12,7 @@ body {
 }
 
 section {
-  padding: 2em 2em;
+  padding: 3em 3em;
 }
 
 h1 {
@@ -29,20 +29,30 @@ h2 {
 }
 
 h3 {
+  font-size: 1.1em;
+  font-weight: 400;
+  color: #ff7809;
+}
+
+h4 {
   color: #979797;
+  font-size: 1em;
   font-weight: 400;
 }
 
 h5 {
   font-size: 1em;
   font-weight: 400;
-  color: #ff7809;
 }
 
 p {
   color: #979797;
   font-size: 1em;
   line-height: 1.9em;
+}
+
+ul {
+  list-style: none;
 }
 
 .navbar {
@@ -69,9 +79,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -118,6 +125,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 4em;
 }
 
 .about .img-left {
@@ -138,5 +146,24 @@ p {
   height: 12em;
   border-radius: 200px;
   margin: 2em 2em;
+}
+
+.about .container h3 {
+  padding-top: 2em;
+}
+
+.experience {
+  padding-top: 4em;
+}
+
+.experience p {
+  padding-top: 2em;
+}
+
+.experience ul {
+  list-style-image: url("assets/bullet.svg");
+  color: #ff7809;
+  text-align: left;
+  padding: 1em 2em;
 }
 /*# sourceMappingURL=style.css.map */

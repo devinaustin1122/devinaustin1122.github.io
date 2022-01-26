@@ -12,7 +12,7 @@ body {
 }
 
 section{
-    padding: 2em 2em;
+    padding: 3em 3em;
 }
 
 h1 {
@@ -23,27 +23,36 @@ h1 {
     margin-left: -.08em;
 }
 
-
 h2 {
     font-size: 2em;
     font-weight: 400;
 }
 
 h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+    color: #ff7809;
+}
+
+h4 {
     color: rgb(151, 151, 151);
+    font-size: 1em;
     font-weight: 400;
 }
 
 h5 {
     font-size: 1em;
     font-weight: 400;
-    color: #ff7809;
 }
 
 p { 
     color: rgb(151, 151, 151);
     font-size: 1em;
     line-height: 1.9em;
+}
+
+ul {
+    list-style: none;
 }
 
 .navbar {
@@ -66,7 +75,7 @@ p {
     position: relative;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     .container {
         display: flex;
@@ -98,6 +107,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4em;
     .img-left {
         display: none;
     }
@@ -113,5 +123,21 @@ p {
             border-radius: 200px;
             margin: 2em 2em;
         }
+        h3 {
+            padding-top: 2em;
+        }
+    }
+}
+
+.experience {
+    padding-top: 4em;
+    p {
+        padding-top: 2em;
+    }
+    ul {
+        list-style-image: url("assets/bullet.svg");
+        color: #ff7809;
+        text-align: left;
+        padding: 1em 2em;
     }
 }
