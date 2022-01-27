@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 $primary-color:  #ff7809;
+$secondary-color:  #ffbc85;
 
 *, *::before, *::after {
     padding: 0;
@@ -107,24 +108,24 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    .img-left, .img-right {
-        display: none;
+    img {
+        width: 12em;
+        height: 12em;
+        border-radius: 200px;
+        margin: 4em;
+        box-shadow:
+        0 0 0 15px $primary-color,
+        0 0 0 35px $secondary-color;
     }
     .container {
+        position: relative;
         text-align: center;
-        img {
-            width: 12em;
-            height: 12em;
-            border-radius: 200px;
-            margin: 2em 2em;
-        }
-        h3 {
-            padding-top: 2em;
-        }
     }
 }
 
 .experience {
+    display: flex;
+    align-items: center;
     min-height: 100vh;
     p {
         padding-top: 2em;
@@ -161,24 +162,38 @@ ul {
 }
 
 @media only screen and (min-width: 600px) {
-    section {
-        padding: 5em 5em;
+    .navbar {
+        padding: 3em;
     }
 
-    .about {
-        .img-left {
-            display: inline;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 8em;
-        }
-        .img-right {
-            display: inline;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 7em;
-        }
+    section {
+        padding: 5em 7em;
     }
+  }
+
+  @media only screen and (min-width: 800px) {
+    body {
+        // font-size: 18px;
+    }
+
+    section {
+        padding: 5em 10em;
+    }
+
+    // .about {
+    //     .img-left {
+    //         display: inline;
+    //         position: absolute;
+    //         left: 0;
+    //         bottom: 0;
+    //         width: 8em;
+    //     }
+    //     .img-right {
+    //         display: inline;
+    //         position: absolute;
+    //         right: 0;
+    //         top: 7em;
+    //         width: 7em;
+    //     }
+    // }
   }
