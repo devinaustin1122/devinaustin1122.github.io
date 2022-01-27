@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+$primary-color:  #ff7809;
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
@@ -11,7 +13,7 @@ body {
 }
 
 section{
-    padding: 2em 2em;
+    padding: 3em 2em;
     position: relative;
 }
 
@@ -47,7 +49,7 @@ h5 {
 }
 
 p { 
-    color: rgb(151, 151, 151);
+    color: #979797;
     font-size: 1em;
     line-height: 1.9em;
 }
@@ -84,10 +86,10 @@ ul {
     .cta {
         padding-top: 3em;
         a {
-            border: solid #ff7809 2px;
+            border: solid $primary-color 2px;
             border-radius: .5em 1em;
             padding: 1em 2em;
-            color: #ff7809;
+            color: $primary-color;
             text-decoration: none;
             cursor: pointer;
         }
@@ -105,15 +107,10 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 4em;
-    .img-left {
-        display: none;
-    }
-    .img-right {
+    .img-left, .img-right {
         display: none;
     }
     .container {
-        padding-top: 4em;
         text-align: center;
         img {
             width: 12em;
@@ -129,13 +126,12 @@ ul {
 
 .experience {
     min-height: 100vh;
-    padding-top: 4em;
     p {
         padding-top: 2em;
     }
     ul {
         list-style-image: url("assets/bullet.svg");
-        color: #ff7809;
+        color: $primary-color;
         text-align: left;
         padding: 1em 2em;
     }
@@ -143,9 +139,8 @@ ul {
 
 .projects {
     min-height: 100vh;
-    padding-top: 4em;
     .project-card {
-        border: solid #ff7809 2px;
+        border: solid $primary-color 2px;
         border-radius: .5em 1em;
         overflow: hidden;
         padding: 1em;
@@ -164,3 +159,26 @@ ul {
         float: right;
     }
 }
+
+@media only screen and (min-width: 600px) {
+    section {
+        padding: 5em 5em;
+    }
+
+    .about {
+        .img-left {
+            display: inline;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 8em;
+        }
+        .img-right {
+            display: inline;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 7em;
+        }
+    }
+  }

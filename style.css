@@ -11,7 +11,7 @@ body {
 }
 
 section {
-  padding: 2em 2em;
+  padding: 3em 2em;
   position: relative;
 }
 
@@ -124,19 +124,13 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 4em;
 }
 
-.about .img-left {
-  display: none;
-}
-
-.about .img-right {
+.about .img-left, .about .img-right {
   display: none;
 }
 
 .about .container {
-  padding-top: 4em;
   text-align: center;
 }
 
@@ -153,7 +147,6 @@ ul {
 
 .experience {
   min-height: 100vh;
-  padding-top: 4em;
 }
 
 .experience p {
@@ -169,7 +162,6 @@ ul {
 
 .projects {
   min-height: 100vh;
-  padding-top: 4em;
 }
 
 .projects .project-card {
@@ -193,5 +185,25 @@ ul {
   height: 1.5em;
   margin-top: 2em;
   float: right;
+}
+
+@media only screen and (min-width: 600px) {
+  section {
+    padding: 5em 5em;
+  }
+  .about .img-left {
+    display: inline;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 8em;
+  }
+  .about .img-right {
+    display: inline;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 7em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
