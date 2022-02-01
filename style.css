@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #fff8f2;
+  background-color: #ffffff;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -138,8 +138,8 @@ ul {
 .about img {
   width: 10em;
   height: 10em;
-  border-radius: 200px;
-  margin: 3em;
+  border-radius: 0  50% 50% 0;
+  margin: 4em;
   -webkit-box-shadow: 0 0 0 15px #ff9e4e, 0 0 0 35px #ffbc85;
           box-shadow: 0 0 0 15px #ff9e4e, 0 0 0 35px #ffbc85;
 }

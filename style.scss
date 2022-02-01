@@ -11,7 +11,7 @@ $tertiary-color:  #122f6e;
 }
 
 body {
-    background-color: #fff8f2;
+    background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -120,8 +120,8 @@ ul {
     img {
         width: 10em;
         height: 10em;
-        border-radius: 200px;
-        margin: 3em;
+        border-radius: 0  50% 50% 0;
+        margin: 4em;
         box-shadow:
         0 0 0 15px $primary-color,
         0 0 0 35px $secondary-color;
