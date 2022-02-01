@@ -7,6 +7,7 @@
 }
 
 body {
+  background-color: #fff8f2;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -21,17 +22,19 @@ h1 {
   line-height: 1em;
   padding: .1em 0;
   margin-left: -.08em;
+  color: #122f6e;
 }
 
 h2 {
   font-size: 2em;
   font-weight: 400;
+  color: #122f6e;
 }
 
 h3 {
   font-size: 1.3em;
   font-weight: 400;
-  color: white;
+  color: #122f6e;
 }
 
 h4 {
@@ -47,9 +50,9 @@ h5 {
 }
 
 p {
-  color: #979797;
-  font-size: 1em;
-  line-height: 1.9em;
+  color: #7e7e7e;
+  font-size: .9em;
+  line-height: 1.8em;
 }
 
 ul {
@@ -63,14 +66,20 @@ ul {
   z-index: 1;
 }
 
-.navbar nav {
-  display: none;
-}
-
-.navbar img {
+.navbar .navbar-toggle {
   height: 2em;
   width: 2em;
   float: right;
+}
+
+.navbar .navbar-brand {
+  height: 2em;
+  width: 2em;
+  float: left;
+}
+
+.navbar nav {
+  display: none;
 }
 
 .hero {
@@ -98,10 +107,10 @@ ul {
 }
 
 .hero .cta a {
-  border: solid #ff7809 2px;
+  border: solid #ff9e4e 2px;
   border-radius: .5em 1em;
   padding: 1em 2em;
-  color: #ff7809;
+  color: #ff9e4e;
   text-decoration: none;
   cursor: pointer;
 }
@@ -127,12 +136,12 @@ ul {
 }
 
 .about img {
-  width: 12em;
-  height: 12em;
+  width: 10em;
+  height: 10em;
   border-radius: 200px;
-  margin: 4em;
-  -webkit-box-shadow: 0 0 0 15px #ff7809, 0 0 0 35px #ffbc85;
-          box-shadow: 0 0 0 15px #ff7809, 0 0 0 35px #ffbc85;
+  margin: 3em;
+  -webkit-box-shadow: 0 0 0 15px #ff9e4e, 0 0 0 35px #ffbc85;
+          box-shadow: 0 0 0 15px #ff9e4e, 0 0 0 35px #ffbc85;
 }
 
 .about .container {
@@ -156,7 +165,7 @@ ul {
 
 .experience ul {
   list-style-image: url("assets/bullet.svg");
-  color: #ff7809;
+  color: #ff9e4e;
   text-align: left;
   padding: 1em 2em;
 }
@@ -166,15 +175,13 @@ ul {
 }
 
 .projects .project-card {
-  border: solid #ff7809 2px;
+  border: solid #ff9e4e 2px;
   border-radius: .5em 1em;
   overflow: hidden;
   padding: 1em;
   margin-top: 3em;
-}
-
-.projects h3 {
-  color: black;
+  -webkit-box-shadow: 5px 5px 5px #d6d6d6;
+          box-shadow: 5px 5px 5px #d6d6d6;
 }
 
 .projects p {
