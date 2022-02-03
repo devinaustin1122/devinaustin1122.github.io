@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1em;
+  padding-bottom: .5em;
+}
+
+h5 {
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 3em;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  padding: 2em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero {
+  background-color: #7000FF;
+  color: white;
+}
+
+.hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero .container a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 2em;
+  color: white;
+  border: solid white 2px;
+  border-radius: 1em;
+}
+
+.hero .container a:hover {
+  background-color: white;
+  color: #7000FF;
+}
+
+.hero .container img {
+  display: block;
+  margin-top: 3em;
+  width: 15em;
+  height: 15em;
+  border: solid white .7em;
+  border-radius: 0px 50% 50% 0px;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
