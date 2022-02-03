@@ -38,6 +38,20 @@ section {
           align-items: center;
 }
 
+.navbar {
+  width: 100%;
+  padding: 2em 2em;
+  position: fixed;
+}
+
+.navbar .navbar-toggle {
+  float: right;
+}
+
+.navbar ul {
+  display: none;
+}
+
 .hero {
   background-color: #7000FF;
   color: white;
@@ -71,9 +85,9 @@ section {
 .hero .container img {
   display: block;
   margin-top: 3em;
-  width: 15em;
-  height: 15em;
-  border: solid white .7em;
+  width: 12em;
+  height: 12em;
+  border: solid white .5em;
   border-radius: 0px 50% 50% 0px;
   background-color: white;
 }

@@ -27,3 +27,10 @@
         transform: translateX(0);
     }
 }
+
+.white-to-back {
+    fill: white;
+    &.scrolled {
+        fill: black;
+    }
+}

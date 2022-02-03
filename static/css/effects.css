@@ -45,4 +45,12 @@
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.white-to-back {
+  fill: white;
+}
+
+.white-to-back.scrolled {
+  fill: black;
+}
 /*# sourceMappingURL=effects.css.map */
