@@ -9,6 +9,7 @@
 
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 h1 {
@@ -17,16 +18,27 @@ h1 {
   padding-bottom: .5em;
 }
 
+h2 {
+  color: #353535;
+  padding-bottom: 1em;
+}
+
 h5 {
   font-size: 1em;
   font-weight: 300;
   padding-bottom: 3em;
 }
 
+p {
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #616161;
+  padding-bottom: .7em;
+}
+
 section {
-  height: 100vh;
   width: 100%;
-  padding: 2em 2em;
+  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,6 +65,7 @@ section {
 }
 
 .hero {
+  height: 100vh;
   background-color: #7000FF;
   color: white;
 }
@@ -68,9 +81,6 @@ section {
 }
 
 .hero .container a {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   padding: 1em 2em;
   color: white;
   border: solid white 2px;
@@ -90,5 +100,28 @@ section {
   border: solid white .5em;
   border-radius: 0px 50% 50% 0px;
   background-color: white;
+}
+
+.about {
+  padding: 0px;
+}
+
+.about .container {
+  z-index: -1;
+  padding: 2em;
+  background-color: #f0f0f0;
+}
+
+.about .container a {
+  padding: 1em 2em;
+  margin-top: 1em;
+  color: #7000FF;
+  border: solid #7000FF 2px;
+  border-radius: 1em;
+}
+
+.about .container a:hover {
+  background-color: #7000FF;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
