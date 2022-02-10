@@ -1,6 +1,6 @@
 let options = {
     root: null,
-    threshold: .8
+    threshold: .6
 }
 
 let observer = new IntersectionObserver((entries, observer) => {
@@ -28,7 +28,7 @@ document.querySelectorAll(".fade-up").forEach((target) => {
 
 let heroOptions = {
     root: null,
-    threshold: .9
+    threshold: .1
 }
 
 let navbar = document.querySelector(".navbar");
@@ -36,12 +36,11 @@ let navbar = document.querySelector(".navbar");
 let heroObserver = new IntersectionObserver((entries, heroObserver) => {
     entries.forEach((entry)=> {
         if(!entry.isIntersecting) {
-            navbar.classList.remove('scrolled');
-        } else {
-            console.log("black");
             navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
         }
     })
 }, heroOptions)
 
-heroObserver.observe(document.querySelector(".about"));
+heroObserver.observe(document.querySelector(".hero"));
