@@ -14,13 +14,19 @@ h1 {
 
 h2 {
   font-size: 4em;
-  padding-bottom: .2em;
 }
 
 h3 {
   font-size: 2em;
   line-height: 1em;
   padding: .5em 0px;
+}
+
+h4 {
+  font-size: 1.4em;
+  font-weight: 700;
+  padding: 1em 0;
+  color: #7000FF;
 }
 
 h5 {
@@ -97,6 +103,10 @@ ul {
 .about .row .col-right p {
   padding-bottom: .5em;
   color: #919191;
+}
+
+.projects {
+  background-color: #dfdfdf;
 }
 
 .projects li {
