@@ -12,15 +12,28 @@ h1 {
     line-height: .8em;
 }
 
+h2 {
+    font-size: 5em;
+}
+
 h3 {
     font-size: 2em;
     line-height: 1em;
     padding: .5em 0px;
 }
 
+h5 {
+        font-size: 1em;
+        line-height: 1.5em;
+}
+
 p {
     font-size: 1em;
-    color: rgb(214, 214, 214);
+    line-height: 1.6em;
+}
+
+section {
+    padding: 2em;
 }
 
 .navbar {
@@ -38,7 +51,6 @@ p {
 .hero {
     height: 100vh;
     background-color: #7000FF;
-    padding: 2em;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -46,35 +58,28 @@ p {
     .row {
         .col-right {
             color: white;
+            p {
+                color: #c4c4c4;
+            }
         }
+    }
+    .p {
+        color: #d6d6d6;
     }
 }
 
+#profile {
+    width: 100vw;
+}
+
 .about {
-    padding: 0px;
-    .container {
-        z-index: -1;
-        padding: 2em;
-        background-color: #f0f0f0;
-        a {
-            width: 100%;
-            text-align: center;
-            padding: 1em 2em;
-            margin-top: 1em;
-            margin-bottom: 1em;
-            color: #7000FF;
-            border: solid #7000FF 2px;
-            border-radius: 1em;
-            &:hover {
-                background-color: #7000FF;
-                color: white;
-            }
-        }
+    margin-top: -5em;
+    .row {
         .col-right {
-            .card {
-                background-color: rgb(252, 252, 252);  
-                box-shadow: 0px 0px 8px 1px #e4e4e4;
-                padding: 1em;             
+            padding-top: 2em;
+            p {
+                padding-bottom: .5em;
+                color: rgb(119, 119, 119);
             }
         }
     }
