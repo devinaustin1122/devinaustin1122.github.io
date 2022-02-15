@@ -29,12 +29,12 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.5em;
 }
 
 p {
-    font-size: 1em;
+    font-size: .9em;
     line-height: 1.6em;
 }
 
@@ -82,12 +82,13 @@ ul {
     }
 }
 
-#profile {
-    width: 100%;
-}
-
 .about {
-    margin-top: -5em;
+    img {
+        width: 100%;
+    }
+    h2 {
+        margin-top: -.5em;
+    }
     .row {
         .col-right {
             padding-top: 2em;
@@ -121,6 +122,9 @@ ul {
         color: white;
     }
 
+    li {
+        padding: 2em 0;
+    }
     li:nth-child(1) {
         img {
             background-image: url('../images/project-intern.png');
@@ -145,3 +149,66 @@ ul {
         border: none;
     }
 }
+
+@media only screen and (min-width: 500px) {
+    section {
+        padding: 3em 6em;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .hero {
+        .row {
+            display:flex;
+            .col-left, .col-right{
+                flex: 1;
+            }
+            .col-left {
+                h1{
+                    float: right;
+                }
+            }
+        }
+    }
+
+    .about {
+        img {
+            width: 80%;
+            display: block;
+            margin-left: auto;
+        }
+        h2 {
+            margin-top: -1em;
+        }
+        .row {
+            display: flex;
+            .col-left, .col-right {
+                flex: 1;
+            }
+            .col-right {
+                padding-top: unset;
+                padding-left: 4em;
+            }
+        }
+    }
+
+    .projects {
+        li {
+            display: flex;
+            .description {
+                padding: 2em;
+                text-align: left;
+            }
+        }
+    }
+
+  }
+
+  @media only screen and (min-width: 1000px) {
+    body {
+        font-size: 18px;
+    }
+    section {
+        padding: 5em 11em;
+    }
+  }

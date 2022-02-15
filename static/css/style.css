@@ -29,12 +29,12 @@ h4 {
 }
 
 h5 {
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.5em;
 }
 
 p {
-  font-size: 1em;
+  font-size: .9em;
   line-height: 1.6em;
 }
 
@@ -92,12 +92,12 @@ ul {
   color: #d6d6d6;
 }
 
-#profile {
+.about img {
   width: 100%;
 }
 
-.about {
-  margin-top: -5em;
+.about h2 {
+  margin-top: -.5em;
 }
 
 .about .row .col-right {
@@ -136,6 +136,10 @@ ul {
   color: white;
 }
 
+.projects li {
+  padding: 2em 0;
+}
+
 .projects li:nth-child(1) img {
   background-image: url("../images/project-intern.png");
 }
@@ -156,5 +160,67 @@ ul {
   line-height: 2em;
   border-radius: .5em;
   border: none;
+}
+
+@media only screen and (min-width: 500px) {
+  section {
+    padding: 3em 6em;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .hero .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .hero .row .col-left, .hero .row .col-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .hero .row .col-left h1 {
+    float: right;
+  }
+  .about img {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+  }
+  .about h2 {
+    margin-top: -1em;
+  }
+  .about .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about .row .col-left, .about .row .col-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .about .row .col-right {
+    padding-top: unset;
+    padding-left: 4em;
+  }
+  .projects li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects li .description {
+    padding: 2em;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 5em 11em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
