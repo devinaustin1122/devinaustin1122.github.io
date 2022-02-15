@@ -8,7 +8,7 @@
 }
 
 h1 {
-  font-size: 9em;
+  font-size: 6em;
   line-height: .8em;
 }
 
@@ -73,6 +73,10 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hero .row .col-left {
+  float: left;
 }
 
 .hero .row .col-right {
