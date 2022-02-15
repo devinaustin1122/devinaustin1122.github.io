@@ -115,13 +115,16 @@ ul {
   color: #919191;
 }
 
-.work {
-  background-color: #FFFA00;
+.experience .facet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2em;
 }
 
-.work h2 {
-  float: right;
-  color: #01195c;
+.experience .facet img {
+  width: 2.5em;
+  margin-right: 1em;
 }
 
 .projects {

@@ -102,12 +102,15 @@ ul {
     }
 }
 
-.work {
-    h2 {
-        float: right;
-        color: rgb(1, 25, 92);
+.experience {
+    .facet {
+        display: flex;
+        padding-top: 2em;
+        img {
+            width: 2.5em;
+            margin-right: 1em;
+        }
     }
-    background-color: #FFFA00;
 }
 
 .projects {
