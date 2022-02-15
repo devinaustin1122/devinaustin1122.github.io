@@ -109,11 +109,25 @@ ul {
         background-size: cover;
         background-position: center;
         box-shadow: 2px 2px 5px 5px rgb(177, 177, 177);
-    }    
+    }  
+    h2 {
+        display: inline;
+        position: relative;
+        &::after {
+            content: "";
+            z-index: -1;
+            width: 100%;
+            border-top: solid #7000FF .35em;
+            position: absolute;
+            left: 0;
+            bottom: 10%;
+        }
+    }  
     h5 {
         margin: 1em 0;
     }
     .badge {
+        font-size: .8em;
         display: inline-block;
         margin: 1em .2em;
         padding: .3em .5em;
@@ -206,9 +220,9 @@ ul {
 
   @media only screen and (min-width: 1000px) {
     body {
-        font-size: 18px;
+        font-size: 19px;
     }
     section {
-        padding: 5em 11em;
+        padding: 8em 11em;
     }
   }
