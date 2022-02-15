@@ -39,6 +39,8 @@ p {
 }
 
 section {
+    display: flex;
+    justify-content: center;
     padding: 2em;
 }
 
@@ -83,13 +85,14 @@ ul {
 }
 
 .about {
-    img {
+    #profile {
         width: 100%;
     }
     h2 {
         margin-top: -.5em;
     }
     .row {
+        margin-bottom: 1em;
         .col-right {
             padding-top: 2em;
             p {
@@ -98,10 +101,18 @@ ul {
             }
         }
     }
+    .qualifications {
+        display: flex;
+        padding-top: 1em;
+        img {
+            width: 2.5em;
+            margin-right: 1em;
+        }
+    }
 }
 
 .projects {
-    background-color: #eeeeee;
+    background-color: #f7f7f7;
     text-align: center;
     img {
         border-radius: 1em;
@@ -113,15 +124,6 @@ ul {
     h2 {
         display: inline;
         position: relative;
-        &::after {
-            content: "";
-            z-index: -1;
-            width: 100%;
-            border-top: solid #7000FF .35em;
-            position: absolute;
-            left: 0;
-            bottom: 10%;
-        }
     }  
     h5 {
         margin: 1em 0;
@@ -129,7 +131,7 @@ ul {
     .badge {
         font-size: .8em;
         display: inline-block;
-        margin: 1em .2em;
+        margin-top: 1em;
         padding: .3em .5em;
         border-radius: .5em;
         background-color: #7000FF;
@@ -166,7 +168,7 @@ ul {
 
 @media only screen and (min-width: 500px) {
     section {
-        padding: 3em 6em;
+        padding: 3em 8em;
     }
 }
 
@@ -186,7 +188,7 @@ ul {
     }
 
     .about {
-        img {
+        #profile {
             width: 80%;
             display: block;
             margin-left: auto;
@@ -209,9 +211,23 @@ ul {
     .projects {
         li {
             display: flex;
+        }
+        li:nth-child(1) {
+            img {
+                background-image: url('../images/project-intern.png');
+            }
             .description {
                 padding: 2em;
                 text-align: left;
+            }
+        }
+        li:nth-child(2) {
+            img {
+                background-image: url('../images/project-movein.png');
+            }
+            .description {
+                padding: 2em;
+                text-align: right;
             }
         }
     }
@@ -219,10 +235,10 @@ ul {
   }
 
   @media only screen and (min-width: 1000px) {
-    body {
-        font-size: 19px;
+    .container {
+        width: 45em;
     }
     section {
-        padding: 8em 11em;
+        padding: 6em 0;
     }
   }

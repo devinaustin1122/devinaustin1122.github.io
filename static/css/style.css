@@ -39,6 +39,12 @@ p {
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2em;
 }
 
@@ -92,12 +98,16 @@ ul {
   color: #d6d6d6;
 }
 
-.about img {
+.about #profile {
   width: 100%;
 }
 
 .about h2 {
   margin-top: -.5em;
+}
+
+.about .row {
+  margin-bottom: 1em;
 }
 
 .about .row .col-right {
@@ -109,8 +119,20 @@ ul {
   color: #919191;
 }
 
+.about .qualifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1em;
+}
+
+.about .qualifications img {
+  width: 2.5em;
+  margin-right: 1em;
+}
+
 .projects {
-  background-color: #eeeeee;
+  background-color: #f7f7f7;
   text-align: center;
 }
 
@@ -128,16 +150,6 @@ ul {
   position: relative;
 }
 
-.projects h2::after {
-  content: "";
-  z-index: -1;
-  width: 100%;
-  border-top: solid #7000FF .35em;
-  position: absolute;
-  left: 0;
-  bottom: 10%;
-}
-
 .projects h5 {
   margin: 1em 0;
 }
@@ -145,7 +157,7 @@ ul {
 .projects .badge {
   font-size: .8em;
   display: inline-block;
-  margin: 1em .2em;
+  margin-top: 1em;
   padding: .3em .5em;
   border-radius: .5em;
   background-color: #7000FF;
@@ -180,7 +192,7 @@ ul {
 
 @media only screen and (min-width: 500px) {
   section {
-    padding: 3em 6em;
+    padding: 3em 8em;
   }
 }
 
@@ -198,7 +210,7 @@ ul {
   .hero .row .col-left h1 {
     float: right;
   }
-  .about img {
+  .about #profile {
     width: 80%;
     display: block;
     margin-left: auto;
@@ -225,18 +237,28 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
-  .projects li .description {
+  .projects li:nth-child(1) img {
+    background-image: url("../images/project-intern.png");
+  }
+  .projects li:nth-child(1) .description {
     padding: 2em;
     text-align: left;
+  }
+  .projects li:nth-child(2) img {
+    background-image: url("../images/project-movein.png");
+  }
+  .projects li:nth-child(2) .description {
+    padding: 2em;
+    text-align: right;
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  body {
-    font-size: 19px;
+  .container {
+    width: 45em;
   }
   section {
-    padding: 8em 11em;
+    padding: 6em 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

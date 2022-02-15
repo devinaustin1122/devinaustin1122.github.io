@@ -1,7 +1,7 @@
 .fade-right {
     opacity: 0;
     transform: translateX(-15%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 2s;
     &.scrolled{
         opacity: 1;
         transform: translateX(0);
@@ -11,7 +11,7 @@
 .fade-down {
     opacity: 0;
     transform: translateY(-15%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 2s;
     &.scrolled{
         opacity: 1;
         transform: translateX(0);
@@ -21,7 +21,7 @@
 .fade-up {
     opacity: 0;
     transform: translateY(15%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 1s, transform 2s;
     &.scrolled{
         opacity: 1;
         transform: translateX(0);

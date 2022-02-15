@@ -1,6 +1,6 @@
 let options = {
     root: null,
-    threshold: .3
+    threshold: .4
 }
 
 let observer = new IntersectionObserver((entries, observer) => {
