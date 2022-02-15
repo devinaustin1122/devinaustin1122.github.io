@@ -85,14 +85,13 @@ ul {
 }
 
 .about {
-    #profile {
+    img {
         width: 100%;
     }
     h2 {
         margin-top: -.5em;
     }
     .row {
-        margin-bottom: 1em;
         .col-right {
             padding-top: 2em;
             p {
@@ -101,18 +100,18 @@ ul {
             }
         }
     }
-    .qualifications {
-        display: flex;
-        padding-top: 1em;
-        img {
-            width: 2.5em;
-            margin-right: 1em;
-        }
+}
+
+.work {
+    h2 {
+        float: right;
+        color: rgb(1, 25, 92);
     }
+    background-color: #FFFA00;
 }
 
 .projects {
-    background-color: #f7f7f7;
+    background-color: #eeeeee;
     text-align: center;
     img {
         border-radius: 1em;
@@ -131,7 +130,7 @@ ul {
     .badge {
         font-size: .8em;
         display: inline-block;
-        margin-top: 1em;
+        margin: 1em .2em;
         padding: .3em .5em;
         border-radius: .5em;
         background-color: #7000FF;
@@ -168,7 +167,7 @@ ul {
 
 @media only screen and (min-width: 500px) {
     section {
-        padding: 3em 8em;
+        padding: 3em 6em;
     }
 }
 
@@ -188,7 +187,7 @@ ul {
     }
 
     .about {
-        #profile {
+        img {
             width: 80%;
             display: block;
             margin-left: auto;
@@ -211,30 +210,19 @@ ul {
     .projects {
         li {
             display: flex;
-        }
-        li:nth-child(1) {
-            img {
-                background-image: url('../images/project-intern.png');
-            }
             .description {
                 padding: 2em;
                 text-align: left;
-            }
-        }
-        li:nth-child(2) {
-            img {
-                background-image: url('../images/project-movein.png');
-            }
-            .description {
-                padding: 2em;
-                text-align: right;
             }
         }
     }
 
   }
 
-  @media only screen and (min-width: 1000px) {
+  @media only screen and (min-width: 900px) {
+    body {
+        font-size: 18px;
+    }
     .container {
         width: 45em;
     }
