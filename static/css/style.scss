@@ -51,14 +51,22 @@ ul {
 }
 
 .navbar {
-    position: fixed;
+    z-index: 999;
+    position: absolute;
     width: 100%;
     padding: 2em;
+    h3 {
+        color: white;
+    }
     nav {
         display: none;
     }
     #toggle {
         float: right;
+    }
+    li {
+        color: white;
+        font-weight: 700;
     }
 }
 
@@ -105,14 +113,15 @@ ul {
 }
 
 .experience {
-    .container {
-        .facet {
-            display: flex;
-            padding-top: 2em;
-            img {
-                width: 2.5em;
-                margin-right: 1em;
-            }
+    background-color: rgb(43, 43, 43);
+    color: white;
+    .facet {
+        flex: 1;
+        padding-top: 2em;
+        margin: 1em;
+        img {
+            width: 2.5em;
+            margin-bottom: 1em;
         }
     }
 }
@@ -179,6 +188,23 @@ ul {
 }
 
 @media only screen and (min-width: 800px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        #toggle {
+            display: none;
+        }
+        nav {
+            display: block;
+            width: 25vw;
+            ul {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+
     .hero {
         .row {
             display:flex;
@@ -214,6 +240,12 @@ ul {
         }
     }
 
+    .experience {
+        ul {
+            display: flex;
+        }
+    }
+
     .projects {
         li {
             display: flex;
@@ -231,9 +263,13 @@ ul {
         font-size: 18px;
     }
     .container {
-        width: 45em;
+        width: 50em;
     }
     section {
         padding: 6em 0;
     }
+    .navbar {
+        padding: .5em 10em;
+    }
+
   }
