@@ -117,14 +117,14 @@ ul {
   color: #919191;
 }
 
-.experience .facet {
+.experience .container .facet {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 2em;
 }
 
-.experience .facet img {
+.experience .container .facet img {
   width: 2.5em;
   margin-right: 1em;
 }

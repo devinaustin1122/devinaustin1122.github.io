@@ -105,12 +105,14 @@ ul {
 }
 
 .experience {
-    .facet {
-        display: flex;
-        padding-top: 2em;
-        img {
-            width: 2.5em;
-            margin-right: 1em;
+    .container {
+        .facet {
+            display: flex;
+            padding-top: 2em;
+            img {
+                width: 2.5em;
+                margin-right: 1em;
+            }
         }
     }
 }
