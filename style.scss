@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    margin-left: -.05em;
+    margin-bottom: .5em;
+} 
+
+h2 {
+    font-size: 3em;
+    margin-left: -.05em;
+    margin-bottom: 1em;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-bottom: .5em;
+
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 1em;
+    line-height: 2em;
+    margin-bottom: 2em;
+}
+
+section {
+    padding: 4em 1em;
+}
+
+.button {
+    font-size: 1.3em;
+    display: inline-block;
+    border: solid black 2px;
+    padding: .5em 2em;
+}
+
+.navbar {
+    padding: 1em;
+    #toggle {
+        width: 2.5em;
+        float: right;
+    }
+    ul {
+        display: none;
+    }
+}
+
+.hero {
+    svg {
+        width: 3em;
+    }
+    img {
+        width: 100%;
+    }
+    .links {
+        svg {
+            margin-right: 1em;
+            margin-bottom: 1em;
+        }
+    }
+}
+
+.experience {
+    hr {
+        height:2px; border-width:0; 
+        color: black;
+        background-color: black;
+        margin-bottom: 1em;
+    }
+    svg {
+        width: 2em;
+    }
+}
+
+.projects {
+    svg {
+        width: 2em;
+    }
+    img {
+        margin-left: -7em;
+        margin-bottom: 1em;
+        width: 100%;
+    }
+}
