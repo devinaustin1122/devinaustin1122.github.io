@@ -1,0 +1,15 @@
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+.navigation__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navigation__content--center {
+  text-align: center;
+}
+.navigation__content--right {
+  text-align: right;
+}

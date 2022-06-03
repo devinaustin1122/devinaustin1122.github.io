@@ -1,0 +1,25 @@
+{
+  "name": "devinaustin1122.github.io",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devinaustin1122/devinaustin1122.github.io.git"
+  },
+  "author": "Devin Dyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devinaustin1122/devinaustin1122.github.io/issues"
+  },
+  "homepage": "https://github.com/devinaustin1122/devinaustin1122.github.io#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.52.2"
+  },
+  "type": "module"
+}
