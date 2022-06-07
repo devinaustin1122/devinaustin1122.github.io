@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./public/styles.css" />
+    <title>Devin Dyer</title>
   </head>
   <body>
-    <img src="./public/logo.svg" />
+    <div class="navigation">
+      <div class="navigation__content">
+        <img class="navigation__brand" src="./public/images/logo.svg" />
+        <div class="navigation__items" id="navigation__items">
+          <img
+            class="navigation__toggle--close"
+            src="./public/images/close.svg"
+            onclick="toggleMenu()"
+          />
+          <a class="navigation__item" href="#"> Experience </a>
+          <a class="navigation__item" href="#"> Projects </a>
+          <a class="navigation__item" href="#"> Contact </a>
+          <img
+            class="navigation__toggle--mode"
+            src="./public/images/brightness.svg"
+          />
+        </div>
+        <img
+          class="navigation__toggle--menu"
+          src="./public/images/menu.svg"
+          onclick="toggleMenu()"
+        />
+      </div>
+    </div>
+
+    <script>
+      function toggleMenu() {
+        let items = document.getElementById("navigation__items");
+        items.classList.toggle("navigation__items--open");
+      }
+    </script>
   </body>
 </html>
