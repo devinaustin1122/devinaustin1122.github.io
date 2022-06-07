@@ -81,6 +81,7 @@ button {
   height: 100vh;
 }
 .navigation__item {
+  font-size: 1.1rem;
   padding-bottom: 1rem;
   color: #828282;
 }
