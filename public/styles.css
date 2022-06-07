@@ -48,6 +48,7 @@ button {
   font-size: 1.2rem;
   font-family: "Inter", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  margin-bottom: 1.5rem;
 }
 
 .navigation {
@@ -65,6 +66,8 @@ button {
 }
 .navigation__items {
   display: none;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-color: white;
 }
 .navigation__items--open {
   display: flex;
@@ -75,7 +78,6 @@ button {
   right: 0;
   padding: 3rem;
   text-align: right;
-  background-color: rgb(252, 252, 252);
   height: 100vh;
 }
 .navigation__item {
@@ -105,4 +107,7 @@ button {
 }
 .hero__mouse {
   display: none;
+}
+.hero__img {
+  max-width: 100%;
 }
