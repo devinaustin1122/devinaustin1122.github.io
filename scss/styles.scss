@@ -56,12 +56,12 @@ a {
     &--menu {
       width: 3rem;
     }
+    &--close {
+      width: 3rem;
+      padding-bottom: 5rem;
+    }
     &--mode {
       width: 2rem;
-    }
-    &--close {
-      width: 2rem;
-      padding-bottom: 5rem;
     }
   }
 }

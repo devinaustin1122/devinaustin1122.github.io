@@ -49,10 +49,10 @@ a {
 .navigation__toggle--menu {
   width: 3rem;
 }
+.navigation__toggle--close {
+  width: 3rem;
+  padding-bottom: 5rem;
+}
 .navigation__toggle--mode {
   width: 2rem;
-}
-.navigation__toggle--close {
-  width: 2rem;
-  padding-bottom: 5rem;
 }
