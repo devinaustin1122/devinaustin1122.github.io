@@ -67,6 +67,10 @@ ul {
   color: #828282;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navigation {
   display: flex;
   padding: 1rem;
