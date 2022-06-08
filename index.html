@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme--light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,8 +20,14 @@
           <a class="navigation__item" href="#"> Projects </a>
           <a class="navigation__item" href="#"> Contact </a>
           <img
-            class="navigation__toggle navigation__toggle--mode"
-            src="./public/images/brightness.svg"
+            class="navigation__toggle navigation__toggle--light"
+            src="./public/images/light.svg"
+            onclick="setTheme('theme--light')"
+          />
+          <img
+            class="navigation__toggle navigation__toggle--dark"
+            src="./public/images/dark.svg"
+            onclick="setTheme('theme--dark')"
           />
         </div>
         <img
@@ -111,7 +117,9 @@
     </section>
 
     <section class="projects">
-      <div class="projects__content"></div>
+      <div class="projects__content">
+        <h2>Projects</h2>
+      </div>
     </section>
 
     <script>
@@ -138,6 +146,10 @@
         );
         description.classList.toggle("experience__description--selected");
         // let id = e.target.getAttribute("control");
+      }
+
+      function setTheme(theme) {
+        document.documentElement.className = theme;
       }
     </script>
   </body>

@@ -1,19 +1,19 @@
 .experience {
-  padding: 1rem;
+  background-color: var(--secondary-color);
 
   &__select {
-    border-bottom: solid 1px #e2e2e2;
     margin-bottom: 1.5rem;
   }
 
   &__selector {
+    color: var(--secondary-text-color);
     display: inline-block;
     padding: 0.5rem;
     padding-right: 2rem;
   }
 
   &__selector--selected {
-    color: black;
+    color: var(--primary-text-color);
     border-bottom: solid 2px #57d7ff;
   }
 

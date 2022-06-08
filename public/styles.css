@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+.theme--light {
+  --primary-color: white;
+  --secondary-color: #fbfbfb;
+  --primary-text-color: black;
+  --secondary-text-color: #828282;
+}
+
+.theme--dark {
+  --primary-color: #1e1e1e;
+  --secondary-color: #303030;
+  --primary-text-color: white;
+  --secondary-text-color: #c8c8c8;
+}
+
 *,
 *::before,
 *::after {
@@ -8,7 +22,12 @@
 }
 
 body {
+  background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
+}
+
+section {
+  padding: 2rem 1rem;
 }
 
 h1 {
@@ -34,15 +53,17 @@ h2 {
 }
 
 h3 {
+  color: var(--primary-text-color);
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
 p {
-  line-height: 1.6rem;
-  color: #828282;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
   margin-bottom: 1.5rem;
+  color: var(--secondary-text-color);
 }
 
 a {
@@ -95,7 +116,7 @@ img {
   width: 0;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-  background-color: white;
+  background-color: var(--primary-color);
   transition: width 1s;
 }
 .navigation__items--open {
@@ -107,7 +128,7 @@ img {
   font-size: 1.1rem;
   padding: 1rem;
   padding-top: 0;
-  color: #828282;
+  color: var(--secondary-text-color);
 }
 .navigation__toggle {
   margin: 1rem;
@@ -120,14 +141,11 @@ img {
   min-width: 1rem;
   padding-bottom: 5rem;
 }
-.navigation__toggle--mode {
+.navigation__toggle--light, .navigation__toggle--dark {
   width: 1.5rem;
   min-width: 1.5rem;
 }
 
-.hero {
-  padding: 2rem 1rem;
-}
 .hero__left {
   display: flex;
   flex-direction: column;
@@ -142,19 +160,19 @@ img {
 }
 
 .experience {
-  padding: 1rem;
+  background-color: var(--secondary-color);
 }
 .experience__select {
-  border-bottom: solid 1px #e2e2e2;
   margin-bottom: 1.5rem;
 }
 .experience__selector {
+  color: var(--secondary-text-color);
   display: inline-block;
   padding: 0.5rem;
   padding-right: 2rem;
 }
 .experience__selector--selected {
-  color: black;
+  color: var(--primary-text-color);
   border-bottom: solid 2px #57d7ff;
 }
 .experience__description {
@@ -165,5 +183,7 @@ img {
 }
 
 .projects {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
