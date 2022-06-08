@@ -49,32 +49,35 @@
     </section>
 
     <section class="experience">
-      <div class="experience__contact">
+      <div class="experience__content">
         <h2>Experience</h2>
         <ul class="experience__select">
           <li>
             <span
               class="experience__selector experience__selector--selected"
-              control="development"
+              control="developer"
               onclick="handleSelect(event)"
             >
-              Development
+              Developer
             </span>
             <span
               class="experience__selector"
-              control="design"
+              control="designer"
               onclick="handleSelect(event)"
-              >Design</span
+              >Designer</span
             >
             <span
               class="experience__selector"
-              control="data"
+              control="analyst"
               onclick="handleSelect(event)"
-              >Data</span
+              >Analyst</span
             >
           </li>
         </ul>
-        <div class="experience__description" id="development">
+        <div
+          class="experience__description experience__description--selected"
+          id="developer"
+        >
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
             felis id lectus condimentum ornare. Cras cursus erat nec mauris
@@ -84,7 +87,31 @@
           </p>
           <img class="experience__image" src="./public/images/coding.png" />
         </div>
+        <div class="experience__description" id="designer">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+            felis id lectus condimentum ornare. Cras cursus erat nec mauris
+            luctus, quis sollicitudin enim mattis.
+          </p>
+          <img class="experience__image" src="./public/images/coding.png" />
+        </div>
+        <div class="experience__description" id="analyst">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+            felis id lectus condimentum ornare. Cras cursus erat nec mauris
+            luctus, quis sollicitudin enim mattis. Nullam bibendum, mauris nec
+            laoreet interdum, nunc ipsum laoreet eros, ac cursus orci neque ut
+            dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            quis felis id lectus condimentum ornare. Cras cursus erat nec mauris
+            luctus, quis sollicitudin enim mattis.
+          </p>
+          <img class="experience__image" src="./public/images/coding.png" />
+        </div>
       </div>
+    </section>
+
+    <section class="projects">
+      <div class="projects__content"></div>
     </section>
 
     <script>
@@ -94,7 +121,23 @@
       }
 
       function handleSelect(e) {
-        console.log(e.target.getAttribute("control"));
+        let selectors = document.getElementsByClassName(
+          "experience__selector--selected"
+        );
+        selectors[0].classList.toggle("experience__selector--selected");
+        e.target.classList.toggle("experience__selector--selected");
+
+        let descriptions = document.getElementsByClassName(
+          "experience__description--selected"
+        );
+
+        descriptions[0].classList.toggle("experience__description--selected");
+
+        let description = document.getElementById(
+          e.target.getAttribute("control")
+        );
+        description.classList.toggle("experience__description--selected");
+        // let id = e.target.getAttribute("control");
       }
     </script>
   </body>

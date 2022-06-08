@@ -8,11 +8,19 @@
 
   &__selector {
     display: inline-block;
-    padding: 1rem;
+    padding: 0.5rem;
     padding-right: 2rem;
   }
 
   &__selector--selected {
     border-bottom: solid 2px #57d7ff;
+  }
+
+  &__description {
+    display: none;
+  }
+
+  &__description--selected {
+    display: block;
   }
 }
