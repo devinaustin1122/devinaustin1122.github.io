@@ -53,13 +53,36 @@
         <h2>Experience</h2>
         <ul class="experience__select">
           <li>
-            <span class="experience__selector experience__selector--selected"
-              >Development</span
+            <span
+              class="experience__selector experience__selector--selected"
+              control="development"
+              onclick="handleSelect(event)"
             >
-            <span class="experience__selector">Design</span>
-            <span class="experience__selector">Data</span>
+              Development
+            </span>
+            <span
+              class="experience__selector"
+              control="design"
+              onclick="handleSelect(event)"
+              >Design</span
+            >
+            <span
+              class="experience__selector"
+              control="data"
+              onclick="handleSelect(event)"
+              >Data</span
+            >
           </li>
         </ul>
+        <div class="experience__description" id="development">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
+            felis id lectus condimentum ornare. Cras cursus erat nec mauris
+            luctus, quis sollicitudin enim mattis. Nullam bibendum, mauris nec
+            laoreet interdum, nunc ipsum laoreet eros, ac cursus orci neque ut
+            dui.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -67,6 +90,10 @@
       function toggleMenu() {
         let items = document.getElementById("navigation__items");
         items.classList.toggle("navigation__items--open");
+      }
+
+      function handleSelect(e) {
+        console.log(e.target.getAttribute("control"));
       }
     </script>
   </body>
