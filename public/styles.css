@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 .theme--light {
-  --primary-color: rgba(255, 255, 255, 0.987);
+  --primary-color: white;
   --secondary-color: #fbfbfb;
   --primary-text-color: black;
   --secondary-text-color: #828282;
