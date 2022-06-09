@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
 .theme--light {
-  --primary-color: white;
-  --secondary-color: #fbfbfb;
+  --primary-color: rgba(255, 255, 255, 0.987);
+  --secondary-color: #fbfbfbfb;
   --primary-text-color: black;
   --secondary-text-color: #828282;
 }
 .theme--dark {
-  --primary-color: #1e1e1e;
+  --primary-color: #1e1e1ef8;
   --secondary-color: #303030;
   --primary-text-color: white;
   --secondary-text-color: #c8c8c8;
