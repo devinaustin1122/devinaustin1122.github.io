@@ -179,7 +179,6 @@ img {
   color: var(--secondary-text-color);
   display: inline-block;
   padding: 0.5rem;
-  padding-right: 2rem;
 }
 .experience__selector--selected {
   color: var(--primary-text-color);
