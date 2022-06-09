@@ -94,6 +94,8 @@ img {
 
 .navigation {
   display: flex;
+  position: fixed;
+  width: 100%;
   padding: 1rem;
 }
 .navigation__content {
@@ -147,7 +149,9 @@ img {
 }
 
 .hero {
-  padding-top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 .hero__left {
   display: flex;

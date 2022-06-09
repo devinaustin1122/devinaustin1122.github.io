@@ -1,5 +1,7 @@
 .hero {
-  padding-top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 
   &__left {
     display: flex;

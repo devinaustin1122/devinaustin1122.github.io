@@ -1,5 +1,7 @@
 .navigation {
   display: flex;
+  position: fixed;
+  width: 100%;
   padding: 1rem;
 
   &__content {
