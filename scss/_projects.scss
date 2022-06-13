@@ -9,8 +9,10 @@
     text-align: center;
   }
 
-  &__img {
+  &__svg {
     width: 10rem;
     margin-bottom: 2rem;
+    fill: var(--secondary-color);
+    transition: fill 1s;
   }
 }

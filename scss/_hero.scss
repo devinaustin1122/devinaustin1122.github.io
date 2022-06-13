@@ -1,12 +1,18 @@
 .hero {
   display: flex;
+  position: relative;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("./images/hero-bg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 70%;
-  animation: bg-float 6s ease-in-out infinite;
+
+  &__bg {
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    fill: var(--secondary-color);
+    animation: bg-float 3s ease-in-out infinite;
+    transition: fill 1s;
+  }
 
   &__content {
     display: flex;
@@ -29,13 +35,12 @@
 
 @keyframes bg-float {
   0% {
-    background-position-y: 70%;
+    top: 50%;
   }
-
   50% {
-    background-position-y: 72%;
+    top: 51%;
   }
   100% {
-    background-position-y: 70%;
+    top: 50%;
   }
 }

@@ -148,6 +148,7 @@ img {
   width: 1rem;
   min-width: 1rem;
   padding-bottom: 5rem;
+  color: white;
 }
 .navigation__toggle--light, .navigation__toggle--dark {
   width: 1.5rem;
@@ -184,13 +185,18 @@ img {
 }
 .hero {
   display: flex;
+  position: relative;
   justify-content: center;
   min-height: 100vh;
-  background-image: url("./images/hero-bg.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position-y: 70%;
-  animation: bg-float 6s ease-in-out infinite;
+}
+.hero__bg {
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  fill: var(--secondary-color);
+  animation: bg-float 3s ease-in-out infinite;
+  transition: fill 1s;
 }
 .hero__content {
   display: flex;
@@ -210,13 +216,13 @@ img {
 
 @keyframes bg-float {
   0% {
-    background-position-y: 70%;
+    top: 50%;
   }
   50% {
-    background-position-y: 72%;
+    top: 51%;
   }
   100% {
-    background-position-y: 70%;
+    top: 50%;
   }
 }
 .experience__select {
@@ -286,7 +292,9 @@ img {
   align-items: center;
   text-align: center;
 }
-.projects__img {
+.projects__svg {
   width: 10rem;
   margin-bottom: 2rem;
+  fill: var(--secondary-color);
+  transition: fill 1s;
 }

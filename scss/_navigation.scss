@@ -54,12 +54,14 @@
     &--menu {
       width: 2rem;
     }
+
     &--close {
       width: 1rem;
       min-width: 1rem;
-
       padding-bottom: 5rem;
+      color: white;
     }
+
     &--light,
     &--dark {
       width: 1.5rem;
