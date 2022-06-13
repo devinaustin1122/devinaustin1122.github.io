@@ -20,24 +20,50 @@
     display: none;
     &--selected {
       display: flex;
+      flex-direction: column;
     }
   }
 
+  &__list {
+    list-style-image: url("./images/logo.svg");
+    padding-left: 1rem;
+
+    &-item {
+      padding: 0.2rem;
+    }
+  }
+
+  &__text {
+    margin-bottom: 1rem;
+  }
+
   &__img {
-    display: none;
+    width: 30rem;
   }
 }
 
 @media screen and (min-width: 700px) {
   .experience {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+      width: 60rem;
+    }
+
     &__description {
+      &--selected {
+        flex-direction: row;
+      }
+
       &--selected {
         display: flex;
       }
     }
 
     &__img {
-      display: none;
+      padding: 3rem;
+      margin-top: -4rem;
     }
   }
 }

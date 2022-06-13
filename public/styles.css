@@ -226,17 +226,39 @@ img {
 }
 .experience__description--selected {
   display: flex;
+  flex-direction: column;
+}
+.experience__list {
+  list-style-image: url("./images/logo.svg");
+  padding-left: 1rem;
+}
+.experience__list-item {
+  padding: 0.2rem;
+}
+.experience__text {
+  margin-bottom: 1rem;
 }
 .experience__img {
-  display: none;
+  width: 30rem;
 }
 
 @media screen and (min-width: 700px) {
+  .experience {
+    display: flex;
+    justify-content: center;
+  }
+  .experience__content {
+    width: 60rem;
+  }
+  .experience__description--selected {
+    flex-direction: row;
+  }
   .experience__description--selected {
     display: flex;
   }
   .experience__img {
-    display: none;
+    padding: 3rem;
+    margin-top: -4rem;
   }
 }
 .projects {
