@@ -1,9 +1,12 @@
 .hero {
-  margin-top: 3rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &__content {
+    margin-top: 3rem;
+  }
 
   &__left {
     display: flex;

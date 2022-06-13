@@ -1,11 +1,10 @@
 .navigation {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: var(--primary-color);
-  border-bottom: solid 1px var(--secondary-color);
 
   &__content {
     display: flex;
@@ -32,6 +31,7 @@
     background-color: var(--primary-color);
 
     &--open {
+      padding: 2rem;
       display: flex;
       text-align: right;
       transition: width 1s;

@@ -95,12 +95,11 @@ img {
 
 .navigation {
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: var(--primary-color);
-  border-bottom: solid 1px var(--secondary-color);
 }
 .navigation__content {
   display: flex;
@@ -124,6 +123,7 @@ img {
   background-color: var(--primary-color);
 }
 .navigation__items--open {
+  padding: 2rem;
   display: flex;
   text-align: right;
   transition: width 1s;
@@ -178,11 +178,13 @@ img {
   }
 }
 .hero {
-  margin-top: 3rem;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hero__content {
+  margin-top: 3rem;
 }
 .hero__left {
   display: flex;
@@ -240,12 +242,14 @@ img {
 }
 .experience__img {
   width: 30rem;
+  object-fit: contain;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
   .experience {
     display: flex;
     justify-content: center;
+    overflow: hidden;
   }
   .experience__content {
     width: 60rem;
@@ -255,6 +259,9 @@ img {
   }
   .experience__description--selected {
     display: flex;
+  }
+  .experience__text {
+    min-width: 20rem;
   }
   .experience__img {
     padding: 3rem;
