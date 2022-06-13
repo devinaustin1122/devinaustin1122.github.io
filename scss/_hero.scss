@@ -3,6 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("./images/hero-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 70%;
 
   &__content {
     margin-top: 4rem;
@@ -25,10 +29,4 @@
 }
 
 @media screen and (min-width: 700px) {
-  .hero {
-    background-image: url("./images/hero-bg.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 70%;
-  }
 }
