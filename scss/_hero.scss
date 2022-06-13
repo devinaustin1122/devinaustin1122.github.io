@@ -1,8 +1,12 @@
 .hero {
   height: 100vh;
-  padding-top: 7rem;
   display: flex;
   align-items: center;
+  justify-content: center;
+
+  &__content {
+    margin-top: 6rem;
+  }
 
   &__left {
     display: flex;
@@ -16,20 +20,15 @@
   }
 
   &__img {
-    width: 100%;
+    width: 25rem;
   }
 }
 
 @media screen and (min-width: 700px) {
   .hero {
-    justify-content: center;
     background-image: url("./images/hero-bg.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position-y: 70%;
-
-    &__img {
-      width: 25rem;
-    }
   }
 }
