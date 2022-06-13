@@ -95,6 +95,7 @@ img {
 }
 
 .navigation {
+  z-index: 1;
   display: flex;
   position: absolute;
   top: 0;

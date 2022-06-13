@@ -151,19 +151,18 @@
 
     <script>
       ScrollReveal().reveal(".hero", {
-        delay: 100,
-        duration: 800,
-        distance: "10px",
+        duration: 2000,
+        distance: "20px",
       });
       ScrollReveal().reveal(".experience", {
         delay: 500,
-        duration: 1000,
-        distance: "10px",
+        duration: 2000,
+        distance: "20px",
       });
       ScrollReveal().reveal(".projects", {
         delay: 500,
-        duration: 1000,
-        distance: "10px",
+        duration: 2000,
+        distance: "20px",
       });
 
       function toggleMenu() {
@@ -188,11 +187,11 @@
           e.target.getAttribute("control")
         );
         description.classList.toggle("experience__description--selected");
-        // let id = e.target.getAttribute("control");
       }
 
       function setTheme(theme) {
         document.documentElement.className = theme;
+        console.log("should be setting theme");
       }
     </script>
   </body>
