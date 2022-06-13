@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Devin Dyer</title>
   </head>
   <body>
@@ -149,6 +150,22 @@
     </section>
 
     <script>
+      ScrollReveal().reveal(".hero", {
+        delay: 100,
+        duration: 800,
+        distance: "10px",
+      });
+      ScrollReveal().reveal(".experience", {
+        delay: 500,
+        duration: 1000,
+        distance: "10px",
+      });
+      ScrollReveal().reveal(".projects", {
+        delay: 500,
+        duration: 1000,
+        distance: "10px",
+      });
+
       function toggleMenu() {
         let items = document.getElementById("navigation__items");
         items.classList.toggle("navigation__items--open");
