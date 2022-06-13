@@ -189,8 +189,9 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 70%;
+  animation: bg-float 6s linear 1s infinite;
 }
-.hero__content {
+ani .hero__content {
   margin-top: 4rem;
 }
 .hero__left {
@@ -206,6 +207,20 @@ img {
   width: 25rem;
 }
 
+@keyframes bg-float {
+  0% {
+    background-position-y: 70%;
+  }
+  50% {
+    background-position-y: 73%;
+  }
+  90% {
+    background-position-y: 71%;
+  }
+  100% {
+    background-position-y: 70%;
+  }
+}
 .experience__select {
   margin-bottom: 1.5rem;
 }
