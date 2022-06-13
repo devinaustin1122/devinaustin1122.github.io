@@ -1,6 +1,4 @@
 .experience {
-  background-color: var(--secondary-color);
-
   &__select {
     margin-bottom: 1.5rem;
   }
@@ -33,17 +31,13 @@
     }
   }
 
-  &__text {
-    margin-bottom: 1rem;
-  }
-
   &__img {
-    width: 30rem;
+    max-width: 100%;
     object-fit: contain;
   }
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .experience {
     display: flex;
     justify-content: center;
@@ -64,12 +58,14 @@
     }
 
     &__text {
+      margin-bottom: 1rem;
       min-width: 20rem;
     }
 
     &__img {
-      padding: 3rem;
-      margin-top: -4rem;
+      height: 27rem;
+      margin: 3rem;
+      margin-top: -5rem !important;
     }
   }
 }

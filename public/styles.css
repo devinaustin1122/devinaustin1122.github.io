@@ -24,6 +24,7 @@
 body {
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
+  transition: background-color 0.5s;
 }
 
 section {
@@ -89,13 +90,17 @@ ul {
   color: #828282;
 }
 
+img {
+  max-width: 100%;
+}
+
 .navigation {
   display: flex;
   position: absolute;
   top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
-  background-color: var(--primary-color);
+  background-color: transparent;
 }
 .navigation__content {
   display: flex;
@@ -161,6 +166,7 @@ ul {
     height: unset;
     flex-direction: row;
     box-shadow: none;
+    background-color: transparent;
   }
   .navigation__toggle {
     margin: 1rem;
@@ -180,7 +186,7 @@ ul {
   justify-content: center;
 }
 .hero__content {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 .hero__left {
   display: flex;
@@ -202,9 +208,6 @@ ul {
     background-size: contain;
     background-position-y: 70%;
   }
-}
-.experience {
-  background-color: var(--secondary-color);
 }
 .experience__select {
   margin-bottom: 1.5rem;
@@ -233,15 +236,12 @@ ul {
 .experience__list-item {
   padding: 0.2rem;
 }
-.experience__text {
-  margin-bottom: 1rem;
-}
 .experience__img {
-  width: 30rem;
+  max-width: 100%;
   object-fit: contain;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 700px) {
   .experience {
     display: flex;
     justify-content: center;
@@ -257,11 +257,13 @@ ul {
     display: flex;
   }
   .experience__text {
+    margin-bottom: 1rem;
     min-width: 20rem;
   }
   .experience__img {
-    padding: 3rem;
-    margin-top: -4rem;
+    height: 27rem;
+    margin: 3rem;
+    margin-top: -5rem !important;
   }
 }
 .projects {
@@ -273,4 +275,8 @@ ul {
   flex-direction: column;
   align-items: center;
   text-align: center;
+}
+.projects__img {
+  width: 10rem;
+  margin-bottom: 2rem;
 }

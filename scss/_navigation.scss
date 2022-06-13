@@ -4,7 +4,7 @@
   top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
-  background-color: var(--primary-color);
+  background-color: transparent;
 
   &__content {
     display: flex;
@@ -81,6 +81,7 @@
       height: unset;
       flex-direction: row;
       box-shadow: none;
+      background-color: transparent;
     }
 
     &__toggle {
