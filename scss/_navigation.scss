@@ -65,3 +65,36 @@
     }
   }
 }
+
+@media screen and (min-width: 700px) {
+  .navigation {
+    justify-content: center;
+
+    &__content {
+      padding: 1rem;
+      max-width: 60rem;
+    }
+
+    &__items {
+      position: relative;
+      justify-content: flex-end;
+      width: 100%;
+      height: unset;
+      flex-direction: row;
+      box-shadow: none;
+    }
+
+    &__toggle {
+      margin: 1rem;
+      padding: 0;
+      &--close,
+      &--menu {
+        display: none;
+      }
+    }
+
+    &__item {
+      font-size: 1rem;
+    }
+  }
+}

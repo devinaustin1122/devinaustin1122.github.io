@@ -9,18 +9,31 @@
     color: var(--secondary-text-color);
     display: inline-block;
     padding: 0.5rem;
-  }
-
-  &__selector--selected {
-    color: var(--primary-text-color);
-    border-bottom: solid 2px #57d7ff;
+    cursor: pointer;
+    &--selected {
+      color: var(--primary-text-color);
+      border-bottom: solid 2px #57d7ff;
+    }
   }
 
   &__description {
     display: none;
+    &--selected {
+      display: flex;
+    }
   }
+}
 
-  &__description--selected {
-    display: block;
+@media screen and (min-width: 700px) {
+  .experience {
+    &__description {
+      &--selected {
+        display: flex;
+      }
+    }
+
+    &__img {
+      display: none;
+    }
   }
 }
