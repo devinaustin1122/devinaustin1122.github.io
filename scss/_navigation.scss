@@ -1,11 +1,11 @@
 .navigation {
   z-index: 1;
   display: flex;
-  position: absolute;
-  top: 0;
+  position: fixed;
   width: 100%;
   padding: 0.5rem 2rem;
-  background-color: transparent;
+  background-color: var(--secondary-color);
+  transition: background-color 1s;
 
   &__content {
     display: flex;
@@ -30,12 +30,14 @@
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: var(--primary-color);
+    transition: background-color 1s;
 
     &--open {
       padding: 2rem;
       display: flex;
       text-align: right;
       transition: width 1s;
+      transition: background-color 1s;
     }
   }
 

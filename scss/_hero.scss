@@ -18,15 +18,13 @@
   }
 
   &__mouse {
-    display: none;
+    width: 1rem;
+    margin-top: 2rem;
   }
 
   &__img {
     width: 25rem;
   }
-}
-
-@media screen and (min-width: 700px) {
 }
 
 @keyframes bg-float {
