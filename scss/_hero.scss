@@ -1,22 +1,19 @@
 .hero {
-  min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  min-height: 100vh;
   background-image: url("./images/hero-bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 70%;
-  animation: bg-float 6s linear 1s infinite;
+  animation: bg-float 6s ease-in-out infinite;
 
-  ani &__content {
-    margin-top: 4rem;
-  }
-
-  &__left {
+  &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
     text-align: center;
   }
 
@@ -38,10 +35,7 @@
   }
 
   50% {
-    background-position-y: 73%;
-  }
-  90% {
-    background-position-y: 71%;
+    background-position-y: 72%;
   }
   100% {
     background-position-y: 70%;
