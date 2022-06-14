@@ -13,13 +13,12 @@
 
     &__content {
       max-width: 70rem;
-      width: 70rem;
     }
   }
 
   .project {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin-bottom: 8rem;
 
