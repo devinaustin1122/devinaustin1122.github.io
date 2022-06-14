@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
 
 .theme--light {
   --primary-color: white;
@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  padding: 6rem 2rem;
+  padding: 3rem 2rem;
 }
 
 h1 {
@@ -56,16 +56,16 @@ h2 {
 h3 {
   color: var(--primary-text-color);
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.5rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: var(--secondary-text-color);
-  max-width: 35rem;
+  max-width: 32rem;
 }
 
 a {
@@ -92,4 +92,10 @@ ul {
 
 img {
   max-width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  section {
+    padding: 6rem 2rem;
+  }
 }

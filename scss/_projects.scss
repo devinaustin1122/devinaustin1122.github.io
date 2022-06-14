@@ -1,17 +1,24 @@
-.projects {
-  display: flex;
-  justify-content: center;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.project {
+  &__img {
+    margin: 2rem;
   }
 }
 
-.project {
-  &:hover > &__img {
-    margin-left: 100px;
+@media screen and (min-width: 700px) {
+  .projects {
+    display: flex;
+    justify-content: center;
+
+    &__content {
+      max-width: 70rem;
+      width: 70rem;
+    }
+  }
+
+  .project {
+    display: flex;
+    &__img {
+      margin: auto;
+    }
   }
 }

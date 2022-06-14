@@ -1,0 +1,9 @@
+.list {
+  list-style-image: url("./images/logo.svg");
+  padding-left: 1rem;
+  color: var(--secondary-text-color);
+
+  &__item {
+    padding: 0.2rem;
+  }
+}

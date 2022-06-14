@@ -23,16 +23,6 @@
     }
   }
 
-  &__list {
-    list-style-image: url("./images/logo.svg");
-    padding-left: 1rem;
-    color: var(--secondary-text-color);
-
-    &-item {
-      padding: 0.2rem;
-    }
-  }
-
   &__svg {
     display: none;
   }
