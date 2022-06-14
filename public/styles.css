@@ -21,6 +21,13 @@
   margin: 0;
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 body {
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
@@ -80,7 +87,6 @@ button {
   border-radius: 0.2rem;
   color: white;
   font-size: 1.2rem;
-  font-family: "Inter", sans-serif;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   margin-bottom: 1.5rem;
 }
@@ -303,7 +309,6 @@ img {
   .projects {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
   }
   .projects__content {
     max-width: 70rem;
@@ -311,6 +316,7 @@ img {
   }
   .project {
     display: flex;
+    margin-bottom: 8rem;
   }
   .project__img {
     margin: auto;
