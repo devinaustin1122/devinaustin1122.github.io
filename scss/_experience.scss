@@ -43,6 +43,7 @@
     overflow: hidden;
 
     &__content {
+      position: relative;
       width: 50rem;
     }
 
@@ -62,7 +63,11 @@
     }
 
     &__svg {
+      z-index: -1;
+      top: 0;
+      right: 0;
       display: block;
+      position: absolute;
       width: 25rem;
       height: 25rem;
       fill: var(--secondary-color);

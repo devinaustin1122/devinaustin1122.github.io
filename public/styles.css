@@ -65,7 +65,7 @@ p {
   line-height: 1.5rem;
   margin-bottom: 1rem;
   color: var(--secondary-text-color);
-  max-width: 40rem;
+  max-width: 35rem;
 }
 
 a {
@@ -184,6 +184,7 @@ img {
   }
 }
 .hero {
+  padding-top: 2rem;
   display: flex;
   position: relative;
   justify-content: center;
@@ -262,6 +263,7 @@ img {
     overflow: hidden;
   }
   .experience__content {
+    position: relative;
     width: 50rem;
   }
   .experience__description--selected {
@@ -275,7 +277,11 @@ img {
     min-width: 20rem;
   }
   .experience__svg {
+    z-index: -1;
+    top: 0;
+    right: 0;
     display: block;
+    position: absolute;
     width: 25rem;
     height: 25rem;
     fill: var(--secondary-color);
@@ -290,10 +296,4 @@ img {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-.projects__svg {
-  width: 10rem;
-  margin-bottom: 2rem;
-  fill: var(--secondary-color);
-  transition: fill 1s;
 }
