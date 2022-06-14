@@ -301,8 +301,11 @@ img {
     fill: var(--secondary-color);
   }
 }
+.project {
+  margin-bottom: 3rem;
+}
 .project__img {
-  margin: 2rem;
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -316,9 +319,12 @@ img {
   }
   .project {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 8rem;
   }
   .project__img {
-    margin: auto;
+    margin-top: 2rem;
+    display: block;
   }
 }

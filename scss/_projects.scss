@@ -1,6 +1,8 @@
 .project {
+  margin-bottom: 3rem;
+
   &__img {
-    margin: 2rem;
+    display: none;
   }
 }
 
@@ -17,10 +19,13 @@
 
   .project {
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-bottom: 8rem;
 
     &__img {
-      margin: auto;
+      margin-top: 2rem;
+      display: block;
     }
   }
 }
