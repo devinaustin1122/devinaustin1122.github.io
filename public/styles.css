@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  padding: 2rem;
+  padding: 6rem 2rem;
 }
 
 h1 {
@@ -65,7 +65,7 @@ p {
   line-height: 1.5rem;
   margin-bottom: 1rem;
   color: var(--secondary-text-color);
-  max-width: 25rem;
+  max-width: 40rem;
 }
 
 a {
@@ -192,8 +192,7 @@ img {
 .hero__bg {
   z-index: -1;
   position: absolute;
-  top: 50%;
-  width: 100%;
+  width: 70%;
   fill: var(--secondary-color);
   animation: bg-float 3s ease-in-out infinite;
   transition: fill 1s;
@@ -252,9 +251,8 @@ img {
 .experience__list-item {
   padding: 0.2rem;
 }
-.experience__img {
-  max-width: 100%;
-  object-fit: contain;
+.experience__svg {
+  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -264,7 +262,7 @@ img {
     overflow: hidden;
   }
   .experience__content {
-    width: 60rem;
+    width: 50rem;
   }
   .experience__description--selected {
     flex-direction: row;
@@ -276,10 +274,11 @@ img {
     margin-bottom: 1rem;
     min-width: 20rem;
   }
-  .experience__img {
-    height: 27rem;
-    margin: 3rem;
-    margin-top: -5rem !important;
+  .experience__svg {
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    fill: var(--secondary-color);
   }
 }
 .projects {

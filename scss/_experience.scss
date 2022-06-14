@@ -31,9 +31,8 @@
     }
   }
 
-  &__img {
-    max-width: 100%;
-    object-fit: contain;
+  &__svg {
+    display: none;
   }
 }
 
@@ -44,7 +43,7 @@
     overflow: hidden;
 
     &__content {
-      width: 60rem;
+      width: 50rem;
     }
 
     &__description {
@@ -62,10 +61,11 @@
       min-width: 20rem;
     }
 
-    &__img {
-      height: 27rem;
-      margin: 3rem;
-      margin-top: -5rem !important;
+    &__svg {
+      display: block;
+      width: 25rem;
+      height: 25rem;
+      fill: var(--secondary-color);
     }
   }
 }
