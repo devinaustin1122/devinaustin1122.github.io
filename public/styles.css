@@ -206,9 +206,8 @@ img {
   margin-top: 5rem;
   text-align: center;
 }
-.hero__mouse {
-  width: 1rem;
-  margin-top: 2rem;
+.hero__text {
+  max-width: 25rem;
 }
 .hero__img {
   width: 25rem;

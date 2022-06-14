@@ -57,7 +57,7 @@
       <div class="hero__content">
         <h1>Hello,</h1>
         <h3>my name is Devin.</h3>
-        <p>
+        <p class="hero__text">
           I'm a solution-driven programmer with more than two years of
           professional experience and a passion for web development.
         </p>
@@ -169,55 +169,6 @@
       </div>
     </section>
 
-    <script>
-      ScrollReveal().reveal(".hero", {
-        duration: 2000,
-        distance: "20px",
-      });
-      ScrollReveal().reveal(".experience", {
-        delay: 200,
-        duration: 2000,
-        distance: "20px",
-        viewOffset: {
-          bottom: 200,
-        },
-      });
-      ScrollReveal().reveal(".projects", {
-        delay: 200,
-        duration: 2000,
-        distance: "20px",
-        viewOffset: {
-          bottom: 200,
-        },
-      });
-
-      function toggleMenu() {
-        let items = document.getElementById("navigation__items");
-        items.classList.toggle("navigation__items--open");
-      }
-
-      function handleSelect(e) {
-        let selectors = document.getElementsByClassName(
-          "experience__selector--selected"
-        );
-        selectors[0].classList.toggle("experience__selector--selected");
-        e.target.classList.toggle("experience__selector--selected");
-
-        let descriptions = document.getElementsByClassName(
-          "experience__description--selected"
-        );
-
-        descriptions[0].classList.toggle("experience__description--selected");
-
-        let description = document.getElementById(
-          e.target.getAttribute("control")
-        );
-        description.classList.toggle("experience__description--selected");
-      }
-
-      function setTheme(theme) {
-        document.documentElement.className = theme;
-      }
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
