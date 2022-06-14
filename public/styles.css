@@ -303,6 +303,7 @@ img {
   .projects {
     display: flex;
     justify-content: center;
+    margin-bottom: 4rem;
   }
   .projects__content {
     max-width: 70rem;
