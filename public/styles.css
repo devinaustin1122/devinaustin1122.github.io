@@ -116,7 +116,7 @@ svg {
 }
 .list {
   list-style-image: url("./images/logo.svg");
-  padding-left: 1rem;
+  padding-left: 2rem;
   color: var(--secondary-text-color);
 }
 .list__item {
@@ -292,7 +292,6 @@ html.sr .load-hidden {
   .experience__content {
     position: relative;
     width: 50rem;
-    height: 25rem;
   }
   .experience__description--selected {
     flex-direction: row;
@@ -321,15 +320,18 @@ html.sr .load-hidden {
 }
 .projects__link {
   align-self: center;
-  color: var(--primary-text-color);
 }
 .projects__link-svg {
+  fill: var(--secondary-text-color);
   width: 2rem;
   margin: 1rem;
 }
 
 .project {
   margin-bottom: 3rem;
+}
+.project__description {
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -342,7 +344,6 @@ html.sr .load-hidden {
   }
   .projects__link {
     align-self: center;
-    color: var(--primary-text-color);
   }
   .projects__link-svg {
     width: 2rem;
@@ -363,13 +364,13 @@ html.sr .load-hidden {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   background-color: white;
-  animation: fade 2s ease-in-out;
+  animation: fade 2s ease-in-out forwards;
 }
 .animate svg {
   animation: spin 2s ease-in-out;
@@ -420,6 +421,9 @@ html.sr .load-hidden {
   }
   80% {
     opacity: 1;
+  }
+  90% {
+    opacity: 0;
   }
   100% {
     opacity: 0;

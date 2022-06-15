@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   background-color: white;
-  animation: fade 2s ease-in-out;
+  animation: fade 2s ease-in-out forwards;
 
   svg {
     animation: spin 2s ease-in-out;
@@ -61,6 +61,9 @@
   }
   80% {
     opacity: 1;
+  }
+  90% {
+    opacity: 0;
   }
   100% {
     opacity: 0;
