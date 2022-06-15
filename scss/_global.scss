@@ -29,6 +29,8 @@ select {
 }
 
 body {
+  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
   transition: background-color 0.5s;
@@ -36,6 +38,7 @@ body {
 
 section {
   padding: 3rem 2rem;
+  margin-top: 1rem;
 }
 
 h1 {
@@ -103,5 +106,6 @@ img {
 @media screen and (min-width: 700px) {
   section {
     padding: 6rem 2rem;
+    margin-top: 1rem;
   }
 }

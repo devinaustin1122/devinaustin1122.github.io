@@ -29,6 +29,8 @@ select {
 }
 
 body {
+  min-height: 100vh;
+  height: 100vh;
   background-color: var(--primary-color);
   font-family: "Inter", sans-serif;
   transition: background-color 0.5s;
@@ -36,6 +38,7 @@ body {
 
 section {
   padding: 3rem 2rem;
+  margin-top: 1rem;
 }
 
 h1 {
@@ -103,8 +106,22 @@ img {
 @media screen and (min-width: 700px) {
   section {
     padding: 6rem 2rem;
+    margin-top: 1rem;
   }
 }
+.loading__content {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.loading__svg {
+  width: 3rem;
+}
+
 .list {
   list-style-image: url("./images/logo.svg");
   padding-left: 1rem;
@@ -114,10 +131,15 @@ img {
   padding: 0.2rem;
 }
 
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 .navigation {
   z-index: 1;
   display: flex;
   position: fixed;
+  top: 0;
   width: 100%;
   padding: 0.5rem 2rem;
   background-color: var(--secondary-color);
@@ -200,6 +222,7 @@ img {
     display: none;
   }
   .navigation__item {
+    padding: 1rem;
     font-size: 1rem;
   }
 }
@@ -302,6 +325,20 @@ img {
     fill: var(--secondary-color);
   }
 }
+.projects__content {
+  display: flex;
+  flex-direction: column;
+}
+.projects__link {
+  align-self: center;
+  color: var(--primary-text-color);
+}
+.projects__link-svg {
+  width: 2rem;
+  margin: 1rem;
+  fill: var(--secondary-text-color);
+}
+
 .project {
   margin-bottom: 3rem;
 }
@@ -316,6 +353,15 @@ img {
   }
   .projects__content {
     max-width: 70rem;
+  }
+  .projects__link {
+    align-self: center;
+    color: var(--primary-text-color);
+  }
+  .projects__link-svg {
+    width: 2rem;
+    margin: 1rem;
+    fill: var(--secondary-text-color);
   }
   .project {
     display: flex;

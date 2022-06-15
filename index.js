@@ -1,21 +1,8 @@
-ScrollReveal().reveal(".hero", {
-  duration: 1500,
-  distance: "20px",
-});
-ScrollReveal().reveal(".experience", {
-  duration: 1500,
-  distance: "20px",
-  viewOffset: {
-    bottom: 200,
-  },
-});
-ScrollReveal().reveal(".projects", {
-  duration: 1500,
-  distance: "20px",
-  viewOffset: {
-    bottom: 200,
-  },
-});
+// setTimeout(() => {
+//   show();
+// }, 5000);
+
+/* functions */
 
 function toggleMenu() {
   let items = document.getElementById("navigation__items");

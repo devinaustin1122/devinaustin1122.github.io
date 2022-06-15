@@ -1,3 +1,21 @@
+.projects {
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    align-self: center;
+    color: var(--primary-text-color);
+
+    &-svg {
+      width: 2rem;
+      margin: 1rem;
+      fill: var(--secondary-text-color);
+    }
+  }
+}
+
 .project {
   margin-bottom: 3rem;
 
@@ -13,6 +31,17 @@
 
     &__content {
       max-width: 70rem;
+    }
+
+    &__link {
+      align-self: center;
+      color: var(--primary-text-color);
+
+      &-svg {
+        width: 2rem;
+        margin: 1rem;
+        fill: var(--secondary-text-color);
+      }
     }
   }
 
