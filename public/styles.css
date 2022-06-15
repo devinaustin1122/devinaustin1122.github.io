@@ -103,25 +103,17 @@ img {
   max-width: 100%;
 }
 
+svg {
+  fill: var(--secondary-color);
+  transition: fill 0.5s;
+}
+
 @media screen and (min-width: 700px) {
   section {
     padding: 6rem 2rem;
     margin-top: 1rem;
   }
 }
-.loading__content {
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-}
-.loading__svg {
-  width: 3rem;
-}
-
 .list {
   list-style-image: url("./images/logo.svg");
   padding-left: 1rem;
@@ -247,9 +239,7 @@ html.sr .load-hidden {
   z-index: -1;
   position: absolute;
   width: 100%;
-  fill: var(--secondary-color);
   animation: bg-float 4s ease-in-out infinite;
-  transition: fill 1s;
 }
 .hero__text {
   max-width: 25rem;
@@ -336,14 +326,10 @@ html.sr .load-hidden {
 .projects__link-svg {
   width: 2rem;
   margin: 1rem;
-  fill: var(--secondary-text-color);
 }
 
 .project {
   margin-bottom: 3rem;
-}
-.project__img {
-  display: none;
 }
 
 @media screen and (min-width: 700px) {
@@ -361,7 +347,6 @@ html.sr .load-hidden {
   .projects__link-svg {
     width: 2rem;
     margin: 1rem;
-    fill: var(--secondary-text-color);
   }
   .project {
     display: flex;
@@ -372,5 +357,71 @@ html.sr .load-hidden {
   .project__img {
     margin-top: 2rem;
     display: block;
+  }
+}
+.animate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  background-color: white;
+  animation: fade 2s ease-in-out;
+}
+.animate svg {
+  animation: spin 2s ease-in-out;
+}
+
+.sml {
+  width: 2rem;
+  height: 2rem;
+}
+
+.med {
+  width: 4rem;
+  height: 4rem;
+}
+
+.lrg {
+  width: 8rem;
+  width: 8rem;
+}
+
+.xlg {
+  width: 16rem;
+  width: 16rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(360deg);
+  }
+  30% {
+    transform: rotate(360deg);
+  }
+  90% {
+    transform: rotate(360deg);
+    transform: scale(0.0001);
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: scale(0.0001);
+  }
+}
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
