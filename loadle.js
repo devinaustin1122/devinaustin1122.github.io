@@ -1,29 +1,33 @@
-/* Loadle.js */
+let Loadle = {
+  onLoad: function onLoad(id) {
+    this.configure(id);
+    this.animate(id);
+    setTimeout(() => {
+      document.getElementById("root").classList.toggle("show");
+      document.getElementById("animation").classList.toggle("hide");
 
-/* this will eventually be able to be used in a script block, passed class names to indicate animation, have built in animations, executes loading sequences, security checks, etc */
+      /* required for scroll reveal compatibility */
+      window.dispatchEvent(new Event("resize"));
+    }, 3000);
+  },
 
-/* potentially helpful links */
+  configure: function configure(id) {
+    let element = document.getElementById(id);
 
-// https://developer.mozil
+    let animation = document.createElement("div");
+    animation.setAttribute("id", "animation");
+    animation.classList.add("hide");
 
-function disableScroll() {
-  document.documentElement.style.height = "100vh";
-  document.documentElement.style.overflow = "hidden";
-}
+    let content = document.createElement("div");
+    content.classList.add("content");
 
-function enableScroll() {
-  document.documentElement.style.height = "auto";
-  document.documentElement.style.overflow = "visible";
-}
+    animation.appendChild(content);
+    element.parentNode.insertBefore(animation, element);
+    content.appendChild(element);
+  },
 
-function removeAnimation(id) {
-  let element = document.getElementById(id);
-  element.style.display = "none";
-}
-
-disableScroll();
-
-setTimeout(() => {
-  removeAnimation("animate");
-  enableScroll();
-}, 2000);
+  animate: function animate(id) {
+    element = document.getElementById("animation");
+    element.classList.toggle("hide");
+  },
+};

@@ -1,8 +1,5 @@
-// setTimeout(() => {
-//   show();
-// }, 5000);
-
-/* functions */
+Loadle.onLoad("logo", "pulse");
+ScrollReveal().reveal(".reveal", { delay: 200 });
 
 function toggleMenu() {
   let items = document.getElementById("navigation__items");

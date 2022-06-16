@@ -4,281 +4,290 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./public/styles.css" />
+    <link rel="stylesheet" href="./public/loadle.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./loadle.js"></script>
     <title>Devin Dyer</title>
   </head>
   <body>
-    <div class="animate" id="animate">
-      <svg class="med" viewBox="0 0 29 32" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M13.9346 13.4473V20.3311L0.667969 31.3711V22.7617L6.82812 16.8613L0.667969 11.0166V2.38867L13.9346 13.4473ZM27.7318 13.4473V20.3311L14.4652 31.3711V22.7617L20.6254 16.8613L14.4652 11.0166V2.38867L27.7318 13.4473Z"
-          fill="url(#paint0_linear_57_9)"
-        />
-        <defs>
-          <linearGradient
-            id="paint0_linear_57_9"
-            x1="-2.63636"
-            y1="19.375"
-            x2="28.9994"
-            y2="20.0476"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop stop-color="#57D7FF" />
-            <stop offset="1" stop-color="#00FFA3" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
+    <svg
+      class="loadle med pulse fade"
+      id="logo"
+      viewBox="0 0 29 32"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M13.9346 13.4473V20.3311L0.667969 31.3711V22.7617L6.82812 16.8613L0.667969 11.0166V2.38867L13.9346 13.4473ZM27.7318 13.4473V20.3311L14.4652 31.3711V22.7617L20.6254 16.8613L14.4652 11.0166V2.38867L27.7318 13.4473Z"
+        fill="url(#paint0_linear_57_9)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_57_9"
+          x1="-2.63636"
+          y1="19.375"
+          x2="28.9994"
+          y2="20.0476"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="#57D7FF" />
+          <stop offset="1" stop-color="#00FFA3" />
+        </linearGradient>
+      </defs>
+    </svg>
 
-    <header class="navigation" id="navigation">
-      <div class="navigation__content">
-        <img class="navigation__brand" src="./public/images/logo.svg" />
-        <div class="navigation__items" id="navigation__items">
+    <div id="root">
+      <header class="navigation" id="navigation">
+        <div class="navigation__content reveal">
+          <img class="navigation__brand" src="./public/images/logo.svg" />
+          <div class="navigation__items" id="navigation__items">
+            <img
+              class="navigation__toggle navigation__toggle--close"
+              src="./public/images/close.svg"
+              onclick="toggleMenu()"
+            />
+            <a class="navigation__item" href="#experience"> Experience </a>
+            <a class="navigation__item" href="#projects"> Projects </a>
+            <a class="navigation__item" href="#"> Contact </a>
+            <img
+              class="navigation__toggle navigation__toggle--light"
+              src="./public/images/light.svg"
+              onclick="setTheme('theme--light')"
+            />
+            <img
+              class="navigation__toggle navigation__toggle--dark"
+              src="./public/images/dark.svg"
+              onclick="setTheme('theme--dark')"
+            />
+          </div>
           <img
-            class="navigation__toggle navigation__toggle--close"
-            src="./public/images/close.svg"
+            class="navigation__toggle navigation__toggle--menu"
+            src="./public/images/menu.svg"
             onclick="toggleMenu()"
           />
-          <a class="navigation__item" href="#experience"> Experience </a>
-          <a class="navigation__item" href="#projects"> Projects </a>
-          <a class="navigation__item" href="#"> Contact </a>
-          <img
-            class="navigation__toggle navigation__toggle--light"
-            src="./public/images/light.svg"
-            onclick="setTheme('theme--light')"
-          />
-          <img
-            class="navigation__toggle navigation__toggle--dark"
-            src="./public/images/dark.svg"
-            onclick="setTheme('theme--dark')"
-          />
         </div>
-        <img
-          class="navigation__toggle navigation__toggle--menu"
-          src="./public/images/menu.svg"
-          onclick="toggleMenu()"
-        />
-      </div>
-    </header>
+      </header>
 
-    <section class="hero">
-      <div class="hero__content">
-        <div class="hero__bg">
-          <svg viewBox="0 0 1728 459" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1302.06 217.712L1421.26 217.712L1612.43 447.434L1463.35 447.434L1361.18 340.766L1259.97 447.434L1110.57 447.434L1302.06 217.712Z"
-            />
-            <path
-              d="M1106.02 28.0547L1172.68 28.0547L1279.59 156.531L1196.22 156.531L1139.08 96.875L1082.48 156.531L998.922 156.531L1106.02 28.0547Z"
-            />
-            <path
-              d="M299.533 18.3662L487.569 18.3662L789.137 380.754L553.965 380.754L392.791 212.484L233.138 380.754L-2.54102 380.754L299.533 18.3662Z"
-            />
-          </svg>
-        </div>
-        <h1>Hello,</h1>
-        <h3>my name is Devin.</h3>
-        <p class="hero__text">
-          I'm a solution-driven programmer with more than two years of
-          professional experience and a passion for web development.
-        </p>
-        <button>Resume</button>
-        <img class="hero__img" src="./public/images/img.png" />
-      </div>
-    </section>
-
-    <section class="experience" id="experience">
-      <div class="experience__content">
-        <h2>Experience</h2>
-        <ul class="experience__select">
-          <li>
-            <span
-              class="experience__selector experience__selector--selected"
-              control="developer"
-              onclick="handleSelect(event)"
-            >
-              Developer
-            </span>
-            <span
-              class="experience__selector"
-              control="designer"
-              onclick="handleSelect(event)"
-              >Designer</span
-            >
-            <span
-              class="experience__selector"
-              control="analyst"
-              onclick="handleSelect(event)"
-              >Analyst</span
-            >
-          </li>
-        </ul>
-        <div
-          class="experience__description experience__description--selected"
-          id="developer"
-        >
-          <div class="experience__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              felis id lectus condimentum ornare. Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis. Nullam bibendum, mauris nec
-              laoreet interdum, nunc ipsum laoreet eros, ac cursus orci neque ut
-              dui.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              felis id lectus condimentum ornare. Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis.
-            </p>
-            <ul class="list">
-              <li class="list__item">Javascript / CSS3 / HTML5</li>
-              <li class="list__item">PHP</li>
-              <li class="list__item">ASP.NET</li>
-              <li class="list__item">C#</li>
-              <li class="list__item">Java</li>
-            </ul>
+      <section class="hero reveal">
+        <div class="hero__content">
+          <div class="hero__bg">
+            <svg viewBox="0 0 1728 459" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1302.06 217.712L1421.26 217.712L1612.43 447.434L1463.35 447.434L1361.18 340.766L1259.97 447.434L1110.57 447.434L1302.06 217.712Z"
+              />
+              <path
+                d="M1106.02 28.0547L1172.68 28.0547L1279.59 156.531L1196.22 156.531L1139.08 96.875L1082.48 156.531L998.922 156.531L1106.02 28.0547Z"
+              />
+              <path
+                d="M299.533 18.3662L487.569 18.3662L789.137 380.754L553.965 380.754L392.791 212.484L233.138 380.754L-2.54102 380.754L299.533 18.3662Z"
+              />
+            </svg>
           </div>
+          <h1>Hello,</h1>
+          <h3>my name is Devin.</h3>
+          <p class="hero__text">
+            I'm a solution-driven programmer with more than two years of
+            professional experience and a passion for web development.
+          </p>
+          <button>Resume</button>
+          <img class="hero__img" src="./public/images/img.png" />
         </div>
-        <div class="experience__description" id="designer">
-          <div class="experience__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              felis id lectus condimentum ornare. Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis.
-            </p>
+      </section>
 
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              felis id lectus condimentum ornare. Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis.Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis.
-            </p>
-            <ul class="list">
-              <li class="list__item">Figma</li>
-              <li class="list__item">Adobe Illustrator</li>
-            </ul>
-          </div>
-        </div>
-        <div class="experience__description" id="analyst">
-          <div class="experience__text">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis
-              felis id lectus condimentum ornare. Cras cursus erat nec mauris
-              luctus, quis sollicitudin enim mattis. Nullam bibendum, mauris nec
-              laoreet interdum, nunc ipsum laoreet eros, ac cursus orci neque ut
-              dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              quis felis id lectus condimentum ornare. Cras cursus erat nec
-              mauris luctus, quis sollicitudin enim mattis.
-            </p>
-            <ul class="list">
-              <li class="list__item">MySQL</li>
-              <li class="list__item">SQL Server</li>
-              <li class="list__item">Oracle</li>
-            </ul>
-          </div>
-        </div>
-        <svg
-          class="experience__svg"
-          viewBox="0 0 251 259"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M123.211 99.7969L123.211 160.664L5.90625 258.281L5.90625 182.156L60.375 129.984L5.90625 78.3047L5.90625 2.01562L123.211 99.7969Z"
-          />
-          <path
-            d="M245.211 97.7969V158.664L127.906 256.281L127.906 180.156L182.375 127.984L127.906 76.3047L127.906 0.015625L245.211 97.7969Z"
-          />
-        </svg>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="projects__content">
-        <div class="projects__list">
-          <div class="project">
-            <div class="project__description">
-              <h2>Projects</h2>
-              <h3>CBE Internships</h3>
+      <section class="experience reveal" id="experience">
+        <div class="experience__content">
+          <h2>Experience</h2>
+          <ul class="experience__select">
+            <li>
+              <span
+                class="experience__selector experience__selector--selected"
+                control="developer"
+                onclick="handleSelect(event)"
+              >
+                Developer
+              </span>
+              <span
+                class="experience__selector"
+                control="designer"
+                onclick="handleSelect(event)"
+                >Designer</span
+              >
+              <span
+                class="experience__selector"
+                control="analyst"
+                onclick="handleSelect(event)"
+                >Analyst</span
+              >
+            </li>
+          </ul>
+          <div
+            class="experience__description experience__description--selected"
+            id="developer"
+          >
+            <div class="experience__text">
               <p>
-                Nullam bibendum, mauris nec laoreet interdum, nunc ipsum laoreet
-                eros, ac cursus orci neque ut dui. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed quis felis id lectus
-                condimentum ornare. Cras cursus erat nec mauris luctus, quis
-                sollicitudin enim mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis felis id lectus condimentum ornare. Cras cursus erat nec
+                mauris luctus, quis sollicitudin enim mattis. Nullam bibendum,
+                mauris nec laoreet interdum, nunc ipsum laoreet eros, ac cursus
+                orci neque ut dui.
               </p>
               <p>
-                Cras cursus erat nec mauris luctus, quis sollicitudin enim
-                mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis felis id lectus condimentum ornare. Cras cursus erat nec
+                mauris luctus, quis sollicitudin enim mattis.
               </p>
               <ul class="list">
-                <li class="list__item">JQuery / CSS3 / HTML5</li>
+                <li class="list__item">Javascript / CSS3 / HTML5</li>
                 <li class="list__item">PHP</li>
-                <li class="list__item">Bootstrap</li>
+                <li class="list__item">ASP.NET</li>
+                <li class="list__item">C#</li>
+                <li class="list__item">Java</li>
               </ul>
             </div>
-            <img class="project__img" src="./public/images/internships.png" />
           </div>
-          <div class="project">
-            <div class="project__description">
-              <h3>Vaccine Certification</h3>
+          <div class="experience__description" id="designer">
+            <div class="experience__text">
               <p>
-                Nullam bibendum, mauris nec laoreet interdum, nunc ipsum laoreet
-                eros, ac cursus orci neque ut dui. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed quis felis id lectus
-                condimentum ornare. Cras cursus erat nec mauris luctus, quis
-                sollicitudin enim mattis.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis felis id lectus condimentum ornare. Cras cursus erat nec
+                mauris luctus, quis sollicitudin enim mattis.
               </p>
+
               <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis felis id lectus condimentum ornare. Cras cursus erat nec
+                mauris luctus, quis sollicitudin enim mattis.Cras cursus erat
+                nec mauris luctus, quis sollicitudin enim mattis.
+              </p>
+              <ul class="list">
+                <li class="list__item">Figma</li>
+                <li class="list__item">Adobe Illustrator</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience__description" id="analyst">
+            <div class="experience__text">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                quis felis id lectus condimentum ornare. Cras cursus erat nec
+                mauris luctus, quis sollicitudin enim mattis. Nullam bibendum,
+                mauris nec laoreet interdum, nunc ipsum laoreet eros, ac cursus
+                orci neque ut dui. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Sed quis felis id lectus condimentum ornare.
                 Cras cursus erat nec mauris luctus, quis sollicitudin enim
                 mattis.
               </p>
               <ul class="list">
-                <li class="list__item">JQuery / CSS3 / HTML5</li>
-                <li class="list__item">ASP.NET / C#</li>
-                <li class="list__item">Bootstrap</li>
+                <li class="list__item">MySQL</li>
+                <li class="list__item">SQL Server</li>
+                <li class="list__item">Oracle</li>
               </ul>
             </div>
-            <img class="project__img" src="./public/images/vaccine.png" />
           </div>
-          <div class="project">
-            <div class="project__description">
-              <h3>Miscellaneous</h3>
-              <p>
-                Nullam bibendum, mauris nec laoreet interdum, nunc ipsum laoreet
-                eros, ac cursus orci neque ut dui. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed quis felis id lectus
-                condimentum ornare. Cras cursus erat nec mauris luctus, quis
-                sollicitudin enim mattis.
-              </p>
-              <p>
-                Cras cursus erat nec mauris luctus, quis sollicitudin enim
-                mattis.
-              </p>
-              <ul class="list">
-                <li class="list__item">JQuery / CSS3 / HTML5</li>
-                <li class="list__item">ASP.NET / C#</li>
-                <li class="list__item">Bootstrap</li>
-              </ul>
-            </div>
-            <img class="project__img" src="./public/images/misc.png" />
-          </div>
-        </div>
-        <a
-          href="https://github.com/devinaustin1122"
-          class="projects__link"
-          href="#"
-          ><svg
-            class="projects__link-svg"
-            viewBox="0 0 76 74"
+          <svg
+            class="experience__svg"
+            viewBox="0 0 251 259"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M38.0042 3.17996e-06C17.0068 -0.0084889 0 16.9927 0 37.9766C0 54.5701 10.6388 68.6755 25.455 73.8556C27.4503 74.3567 27.1447 72.9385 27.1447 71.9704V65.389C15.6228 66.7393 15.1558 59.1134 14.3832 57.8396C12.8209 55.1731 9.12747 54.4937 10.2313 53.2199C12.8549 51.8696 15.5294 53.5596 18.6285 58.1368C20.8701 61.4572 25.2428 60.8967 27.4588 60.3447C27.9428 58.3491 28.9787 56.5658 30.4051 55.1815C18.4672 53.0415 13.4917 45.7553 13.4917 37.0934C13.4917 32.8898 14.8757 29.0259 17.5927 25.9093C15.8606 20.7716 17.754 16.3727 18.0087 15.7188C22.9418 15.2773 28.0702 19.2516 28.4692 19.5658C31.2711 18.81 34.4721 18.4108 38.0552 18.4108C41.6552 18.4108 44.8647 18.8269 47.6921 19.5912C48.6516 18.8609 53.4063 15.4471 57.9913 15.8632C58.2375 16.5171 60.0885 20.8141 58.4583 25.8839C61.2093 29.009 62.6102 32.9068 62.6102 37.1189C62.6102 45.7978 57.6007 53.0925 45.6289 55.1985C46.6543 56.2071 47.4685 57.41 48.0239 58.7368C48.5794 60.0637 48.8649 61.4879 48.8638 62.9263V72.4799C48.9317 73.2442 48.8638 74 50.1374 74C65.1744 68.9302 76 54.723 76 37.9851C76 16.9927 58.9847 3.17996e-06 38.0042 3.17996e-06V3.17996e-06Z"
+              d="M123.211 99.7969L123.211 160.664L5.90625 258.281L5.90625 182.156L60.375 129.984L5.90625 78.3047L5.90625 2.01562L123.211 99.7969Z"
+            />
+            <path
+              d="M245.211 97.7969V158.664L127.906 256.281L127.906 180.156L182.375 127.984L127.906 76.3047L127.906 0.015625L245.211 97.7969Z"
             />
           </svg>
-        </a>
-      </div>
-    </section>
-    <script src="./index.js"></script>
-    <script src="./loadle.js"></script>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="projects__content">
+          <div class="projects__list">
+            <div class="project">
+              <div class="project__description">
+                <h2>Projects</h2>
+                <h3>CBE Internships</h3>
+                <p>
+                  Nullam bibendum, mauris nec laoreet interdum, nunc ipsum
+                  laoreet eros, ac cursus orci neque ut dui. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Sed quis felis id
+                  lectus condimentum ornare. Cras cursus erat nec mauris luctus,
+                  quis sollicitudin enim mattis.
+                </p>
+                <p>
+                  Cras cursus erat nec mauris luctus, quis sollicitudin enim
+                  mattis.
+                </p>
+                <ul class="list">
+                  <li class="list__item">JQuery / CSS3 / HTML5</li>
+                  <li class="list__item">PHP</li>
+                  <li class="list__item">Bootstrap</li>
+                </ul>
+              </div>
+              <img class="project__img" src="./public/images/internships.png" />
+            </div>
+            <div class="project">
+              <div class="project__description">
+                <h3>Vaccine Certification</h3>
+                <p>
+                  Nullam bibendum, mauris nec laoreet interdum, nunc ipsum
+                  laoreet eros, ac cursus orci neque ut dui. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Sed quis felis id
+                  lectus condimentum ornare. Cras cursus erat nec mauris luctus,
+                  quis sollicitudin enim mattis.
+                </p>
+                <p>
+                  Cras cursus erat nec mauris luctus, quis sollicitudin enim
+                  mattis.
+                </p>
+                <ul class="list">
+                  <li class="list__item">JQuery / CSS3 / HTML5</li>
+                  <li class="list__item">ASP.NET / C#</li>
+                  <li class="list__item">Bootstrap</li>
+                </ul>
+              </div>
+              <img class="project__img" src="./public/images/vaccine.png" />
+            </div>
+            <div class="project">
+              <div class="project__description">
+                <h3>Miscellaneous</h3>
+                <p>
+                  Nullam bibendum, mauris nec laoreet interdum, nunc ipsum
+                  laoreet eros, ac cursus orci neque ut dui. Lorem ipsum dolor
+                  sit amet, consectetur adipiscing elit. Sed quis felis id
+                  lectus condimentum ornare. Cras cursus erat nec mauris luctus,
+                  quis sollicitudin enim mattis.
+                </p>
+                <p>
+                  Cras cursus erat nec mauris luctus, quis sollicitudin enim
+                  mattis.
+                </p>
+                <ul class="list">
+                  <li class="list__item">JQuery / CSS3 / HTML5</li>
+                  <li class="list__item">ASP.NET / C#</li>
+                  <li class="list__item">Bootstrap</li>
+                </ul>
+              </div>
+              <img class="project__img" src="./public/images/misc.png" />
+            </div>
+          </div>
+          <a
+            href="https://github.com/devinaustin1122"
+            class="projects__link"
+            href="#"
+            ><svg
+              class="projects__link-svg"
+              viewBox="0 0 76 74"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38.0042 3.17996e-06C17.0068 -0.0084889 0 16.9927 0 37.9766C0 54.5701 10.6388 68.6755 25.455 73.8556C27.4503 74.3567 27.1447 72.9385 27.1447 71.9704V65.389C15.6228 66.7393 15.1558 59.1134 14.3832 57.8396C12.8209 55.1731 9.12747 54.4937 10.2313 53.2199C12.8549 51.8696 15.5294 53.5596 18.6285 58.1368C20.8701 61.4572 25.2428 60.8967 27.4588 60.3447C27.9428 58.3491 28.9787 56.5658 30.4051 55.1815C18.4672 53.0415 13.4917 45.7553 13.4917 37.0934C13.4917 32.8898 14.8757 29.0259 17.5927 25.9093C15.8606 20.7716 17.754 16.3727 18.0087 15.7188C22.9418 15.2773 28.0702 19.2516 28.4692 19.5658C31.2711 18.81 34.4721 18.4108 38.0552 18.4108C41.6552 18.4108 44.8647 18.8269 47.6921 19.5912C48.6516 18.8609 53.4063 15.4471 57.9913 15.8632C58.2375 16.5171 60.0885 20.8141 58.4583 25.8839C61.2093 29.009 62.6102 32.9068 62.6102 37.1189C62.6102 45.7978 57.6007 53.0925 45.6289 55.1985C46.6543 56.2071 47.4685 57.41 48.0239 58.7368C48.5794 60.0637 48.8649 61.4879 48.8638 62.9263V72.4799C48.9317 73.2442 48.8638 74 50.1374 74C65.1744 68.9302 76 54.723 76 37.9851C76 16.9927 58.9847 3.17996e-06 38.0042 3.17996e-06V3.17996e-06Z"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <script src="./index.js"></script>
+    </div>
   </body>
 </html>
