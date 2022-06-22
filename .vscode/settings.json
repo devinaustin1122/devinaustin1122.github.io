@@ -6,5 +6,6 @@
         "cmd": "gulp sass"
       }
     ]
-  }
+  },
+  "liveServer.settings.port": 5501
 }
